@@ -1,6 +1,6 @@
 .sidenav {
   height: 100%;
-  width: 200px;
+  width: 180px;
   position:fixed;
   overflow-x= hidden;
   background-color: purple;
@@ -11,10 +11,26 @@
   font-size: 20px;
   color: black;
   padding-left:15px;
-  line-height: 35px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  display: flex;
+}
+
+.sidenav a:hover {
+  background-color: yellow;
 }
 
 #name {
   font-size: 24px;
   padding-left: 5px;
 }
+
+.main-content {
+  display: inline-block;
+  padding-left: 205px;
+}
+
+@media only screen and (max-width: 640px) {
+  .sidenav {
+    display: none;
+  }
