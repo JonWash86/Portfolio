@@ -7,7 +7,7 @@
   text-align: left;
 }
 
-.sidenav a {
+.sidenav ul {
   font-size: 20px;
   color: black;
   padding-left:15px;
@@ -16,7 +16,7 @@
   display: flex;
 }
 
-.sidenav a:hover {
+.sidenav ul:hover {
   background-color: yellow;
 }
 
@@ -32,5 +32,16 @@
 
 @media only screen and (max-width: 640px) {
   .sidenav {
+    height: 100px;
+    width: 100%;
+  }
+  .sidenav ul {
     display: none;
+  }
+
+  .sidenav:hover ul{
+    display:flex;
+    background-color:purple;
+    margin:none;
+    padding:none;
   }
