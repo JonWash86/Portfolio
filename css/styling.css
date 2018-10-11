@@ -30,6 +30,10 @@
   padding-left: 205px;
 }
 
+.material-icons {
+  display:none;
+}
+
 @media only screen and (max-width: 640px) {
   .sidenav {
     height: 100px;
@@ -44,4 +48,8 @@
     background-color:purple;
     margin:none;
     padding:none;
+  }
+
+  .material-icons {
+    display:inline;
   }
