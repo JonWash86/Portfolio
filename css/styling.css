@@ -2,9 +2,10 @@
   height: 100%;
   width: 180px;
   position:fixed;
-  overflow-x= hidden;
+  /* overflow-x= hidden; */
   background-color: purple;
   text-align: left;
+  /* display: inline-block; */
 }
 
 .sidenav ul {
@@ -23,6 +24,7 @@
 #name {
   font-size: 24px;
   padding-left: 5px;
+  padding-top: 20px;
 }
 
 .main-content {
@@ -34,11 +36,22 @@
   display:none;
 }
 
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width:100%;
+  background-color: yellow;
+  height: 50px;
+  text-align:center
+}
+
 @media only screen and (max-width: 640px) {
   .sidenav {
     height: 100px;
     width: 100%;
   }
+
   .sidenav ul {
     display: none;
   }
@@ -52,4 +65,13 @@
 
   .material-icons {
     display:inline;
+    float:right;
+    padding-right:.75em;
+    font-size:50px;
+    margin-top:.50em;
+  }
+
+  #name{
+    display:inline-block;
+    vertical-align:middle;
   }
