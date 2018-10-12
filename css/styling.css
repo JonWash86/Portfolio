@@ -36,6 +36,10 @@
   display:none;
 }
 
+hr {
+  width:800px;
+}
+
 .footer {
   position: fixed;
   left: 0;
@@ -43,7 +47,13 @@
   width:100%;
   background-color: yellow;
   height: 50px;
-  text-align:center
+  text-align:center;
+  z-index: -1;
+  display:inline-block;
+}
+
+.icon {
+  height: 40px;
 }
 
 @media only screen and (max-width: 640px) {
@@ -74,4 +84,9 @@
   #name{
     display:inline-block;
     vertical-align:middle;
+  }
+
+  .main-content{
+    padding-top:100px;
+    padding-left:0;
   }
