@@ -1,5 +1,9 @@
-function project(title, ){
+function project(title, thumbnail,){
   this.title = title;
+  this.thumbnail = thumbnail;
+
 }
 
-projects.push(new project('Cookie Stand'));
+var projects = [];
+
+projects.push(new project('Cookie Stand', 'cookie_stand.jpg'));
