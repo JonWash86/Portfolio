@@ -1,0 +1,20 @@
+body {
+  margin:0;
+}
+
+hr {
+  width:80%;
+}
+
+#name{
+  display:inline-block;
+  vertical-align:middle;
+  font-size: 24px;
+  padding-left: 5px;
+  padding-top: 20px;
+}
+
+.main-content h2 {
+  margin-top: 0;
+  padding-top: .83em;
+}
