@@ -8,6 +8,7 @@
     <link rel='stylesheet' href='css/layout.css'>
     <link rel='stylesheet' href='css/modules.css'>
     <link rel='stylesheet' href='css/theme.css'>
+    <link rel='stylesheet' href='css/state.css'>
   </head>
   <body>
     <header class='sidenav'>
@@ -20,17 +21,23 @@
     <main class='main-content'>
       <h2>Projects</h2>
       <hr>
-      <div id='project-zone'></div>
-      <div id='popup' class='hide'></div>
+      <section id='projectZone'>
+        <article class='template'>
+          <h3>Title</h3>
+          <div class='date'>
+            date completed
+          </div>
+        </article>
     </main>
     <footer class='footer'>
-      <img class='icon' src='images/mail.png' alt='email'>
-      <img class='icon' src='images/github.png' alt='github'>
+      <a href='mailto:jonathan.washington@gmail.com'><img class='icon' src='images/mail.png' alt='email'></a>
+      <a href='https://github.com/JonWash86'><img class='icon' src='images/github.png' alt='github'></a>
       <img class='icon' src='images/twitter.png' alt='twitter'>
-      <img class='icon' src='images/instagram.png' alt='instagram'>
+      <a href='https://www.instagram.com/goodolejon/?hl=en'><img class='icon' src='images/instagram.png' alt='instagram'></a>
     </footer>
-    <script src='js/scripts.js'></script>
-    <script src='js/projects.js'></script>
+    <script type='text/javascript' src='jquery-3.3.1.min.js'></script>
+    <script type='text/javascript' src='js/scripts.js'></script>
+    <script type='text/javascript' src='js/projects.js'></script>
     <script>window.addEventListener('load', buildProjects);</script>
   </body>
 </html>
