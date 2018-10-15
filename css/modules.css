@@ -17,3 +17,22 @@ img {
 .template {
   display:none;
 }
+
+.project {
+  position: relative;
+  text-align: center;
+}
+
+.project h3{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.project h4{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
