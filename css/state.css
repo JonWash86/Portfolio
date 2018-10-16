@@ -3,7 +3,7 @@
    display:none;
  }
 
- .main-content{ 
+ .main-content{
    padding-left: 205px;
  }
 
@@ -22,6 +22,11 @@
    padding-left:15px;
    padding-top: 5px;
    padding-bottom: 5px;
-   display: flex;
+   display: block;
+ }
+
+ .project {
+   display: inline-block;
+   width: 50%;
  }
 }
