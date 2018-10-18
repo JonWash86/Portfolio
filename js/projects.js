@@ -33,5 +33,5 @@ projects.forEach(function(project){
 })
 
 $(document).ready(function() {
-  tab.handleMainNav();
+  projects.handleMainNav();
 });
