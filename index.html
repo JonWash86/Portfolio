@@ -3,30 +3,42 @@
   <head>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel='stylesheet' href='css/styling.css'>
+    <!-- <link rel='stylesheet' href='css/styling.css'> -->
+    <link rel='stylesheet' href='css/base.css'>
+    <link rel='stylesheet' href='css/layout.css'>
+    <link rel='stylesheet' href='css/modules.css'>
+    <link rel='stylesheet' href='css/theme.css'>
+    <link rel='stylesheet' href='css/state.css'>
   </head>
   <body>
     <header class='sidenav'>
       <h1 id='name'>Jon Washington</h1>
       <span class='material-icons'>menu</span>
-      <ul href='#'>projects</ul>
-      <ul href='#'>about</ul>
-      <ul href='#'>contact</ul>
+      <ul>
+        <li href='#'>projects</li>
+        <li href='#'>about</li>
+        <li href='#'>contact</li>
+      </ul>
     </header>
     <main class='main-content'>
       <h2>Projects</h2>
       <hr>
-      <div id='project-zone'></div>
-      <div id='popup' class='hide'></div>
+      <section id='projectZone'>
+        <article class='template project'>
+          <img class='thumbnail'>
+          <h3>Title</h3>
+          <h4>date completed</h4>
+        </article>
     </main>
     <footer class='footer'>
-      <img class='icon' src='images/mail.png' alt='email'>
-      <img class='icon' src='images/github.png' alt='github'>
+      <a href='mailto:jonathan.washington@gmail.com'><img class='icon' src='images/mail.png' alt='email'></a>
+      <a href='https://github.com/JonWash86'><img class='icon' src='images/github.png' alt='github'></a>
       <img class='icon' src='images/twitter.png' alt='twitter'>
-      <img class='icon' src='images/instagram.png' alt='instagram'>
+      <a href='https://www.instagram.com/goodolejon/?hl=en'><img class='icon' src='images/instagram.png' alt='instagram'></a>
     </footer>
-    <script src='js/scripts.js'></script>
-    <script src='js/projects.js'></script>
+    <script type='text/javascript' src='js/jquery-3.3.1.min.js'></script>
+    <script type='text/javascript' src='js/scripts.js'></script>
+    <script type='text/javascript' src='js/projects.js'></script>
     <script>window.addEventListener('load', buildProjects);</script>
   </body>
 </html>

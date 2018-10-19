@@ -1,0 +1,32 @@
+@media only screen and (min-width: 640px){
+ .material-icons {
+   display:none;
+ }
+
+ .main-content{
+   padding-left: 205px;
+ }
+
+ .sidenav {
+   height: 100%;
+   width: 180px;
+   position:fixed;
+   margin-left:0;
+   background-color: purple;
+   text-align: left;
+ }
+
+ .sidenav ul {
+   font-size: 20px;
+   color: black;
+   padding-left:15px;
+   padding-top: 5px;
+   padding-bottom: 5px;
+   display: block;
+ }
+
+ .project {
+   display: inline-block;
+   width: 50%;
+ }
+}

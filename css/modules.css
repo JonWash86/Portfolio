@@ -1,0 +1,52 @@
+.material-icons {
+  display:inline;
+  float:right;
+  padding-right:.75em;
+  font-size:50px;
+}
+
+img {
+  max-width:100%;
+  opacity:0.6;
+}
+
+img:hover {
+  opacity:1
+}
+
+.icon {
+  height: 40px;
+}
+
+.template {
+  display:none;
+}
+
+.project {
+  position: relative;
+  text-align: center;
+}
+
+.project h3{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.project h4{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* .project{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  color: #FFF;
+} */

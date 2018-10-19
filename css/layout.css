@@ -1,0 +1,27 @@
+.sidenav {
+  width: 100%;
+  padding-left:15px;
+  background-color: purple;
+  z-index: 100;
+}
+
+.sidenav ul {
+  display: none;
+}
+
+.sidenav:hover ul{
+  display:block;
+  background-color:purple;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width:100%;
+  background-color: yellow;
+  height: 50px;
+  text-align:center;
+  z-index: 100;
+  display:inline-block;
+}
