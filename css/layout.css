@@ -24,3 +24,7 @@
   z-index: 100;
   display:inline-block;
 }
+
+#footerBuffer {
+  height: 50px;
+}
