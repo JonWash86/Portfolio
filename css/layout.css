@@ -1,7 +1,7 @@
 .sidenav {
   width: 100%;
   padding-left:15px;
-  background-color: purple;
+  background-color: #7acfdf;
   z-index: 100;
 }
 
@@ -11,7 +11,6 @@
 
 .sidenav:hover ul{
   display:block;
-  background-color:purple;
 }
 
 .footer {
@@ -19,7 +18,7 @@
   left: 0;
   bottom: 0;
   width:100%;
-  background-color: yellow;
+  background-color: #f47645;
   height: 50px;
   text-align:center;
   z-index: 100;
