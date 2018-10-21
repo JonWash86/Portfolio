@@ -7,6 +7,7 @@
 
 .sidenav ul {
   display: none;
+  transition: display 2s;
 }
 
 .sidenav:hover ul{
