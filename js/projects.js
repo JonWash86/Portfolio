@@ -7,15 +7,11 @@ function project(title, thumbnail, dateComplete){
 };
 
 project.prototype.toHtml = function(){
-  var $newProject = $('article.template').clone();
-  $newProject.removeClass('template');
-  $newProject.find('h3').text(this.title);
-  $newProject.find('h4').text(this.dateComplete);
-  $newProject.find('.thumbnail').attr('src', 'images/' + this.thumbnail)
-  $newProject.append('<hr>');
-  return $newProject;
-  console.log(`I have just built the ${this} project object.`)
-
+  var template = $('#template').html();
+  console.log(template);
+  var templateFiller = Handlebars.compile($('#template').html());
+  var filledTemplate = templateFiller(this);
+  return filledTemplate;
 };
 
 projects.handleMainNav = function(){

@@ -9,11 +9,10 @@
     <link rel='stylesheet' href='css/modules.css'>
     <link rel='stylesheet' href='css/theme.css'>
     <link rel='stylesheet' href='css/state.css'>
-    <script>
-     <div id='main' class='tab-content'>
-      <section id='projectZone'>
-        <article class='template project'>
-          <img class={{thumbnail}}>
+    <script id='template' type="text/x-handlebars-template">
+     <div  class='tab-content'>
+        <article class='project'>
+          <img class=thumbnail src=images/{{thumbnail}}>
           <h3>{{title}}</h3>
           <h4>{{dateComplete}}</h4>
         </article>
@@ -43,16 +42,9 @@
 
         <p>Dripper, irish americano qui eu, aged barista carajillo con panna, sugar java half and half extraction black iced, pumpkin spice, caramelization a, et affogato filter eu skinny. Dark espresso, siphon macchiato at turkish cream, crema mug, arabica and coffee variety foam flavour carajillo.<p>
       </div>
-      <div id='main' class='tab-content'>
+      <div id='projectZone' class='tab-content'>
       <h2>Projects</h2>
       <hr>
-      <section id='projectZone'>
-        <article class='template project'>
-          <img class='thumbnail'>
-          <h3>Title</h3>
-          <h4>date completed</h4>
-        </article>
-      </div>
       <div id='contact' class='tab-content'>
         <h2>Contact Me</h2>
         <p>Email me! Form forthcoming soon!</p>
