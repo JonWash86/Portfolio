@@ -10,13 +10,11 @@
     <link rel='stylesheet' href='css/theme.css'>
     <link rel='stylesheet' href='css/state.css'>
     <script id='template' type="text/x-handlebars-template">
-     <div  class='tab-content'>
         <article class='project'>
           <img class=thumbnail src=images/{{thumbnail}}>
           <h3>{{title}}</h3>
           <h4>{{dateComplete}}</h4>
         </article>
-      </div>
     </script>
   </head>
   <body>
@@ -24,7 +22,7 @@
       <img id='meIcon' src='images/meIcon.jpg'><h1 id='name'>Jon Washington</h1>
       <span class='material-icons'>menu</span>
       <ul>
-        <li class='tab' data-content='main' href='#'>projects</li>
+        <li class='tab' data-content='projectZone' href='#'>projects</li>
         <li class='tab' data-content='about' href='#'>about</li>
         <li class='tab' data-content='contact' href='#'>contact</li>
       </ul>
@@ -45,6 +43,7 @@
       <div id='projectZone' class='tab-content'>
       <h2>Projects</h2>
       <hr>
+      </div>
       <div id='contact' class='tab-content'>
         <h2>Contact Me</h2>
         <p>Email me! Form forthcoming soon!</p>
