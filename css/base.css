@@ -1,9 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=ABeeZee|Mukta|Oxygen|Cardo');
+
 body {
   margin:0;
 }
 
+h2{
+  font-family: 'Mukta', sans-serif;
+}
+
 hr {
   width:80%;
+}
+
+p {
+  font-family: 'Cardo', serif;
 }
 
 #name{
@@ -11,6 +21,7 @@ hr {
   vertical-align:middle;
   font-size: 24px;
   padding-left: 5px;
+  font-family: 'Oxygen', sans-serif;
 }
 
 .main-content{
