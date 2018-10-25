@@ -26,6 +26,17 @@
 
  .project {
    display: inline-block;
-   width: 50%;
  }
+}
+
+@media only screen and (min-width: 840px){
+  .project {
+    width: 48%
+  }
+}
+
+@media only screen and (min-width: 1300px){
+  .project {
+    width: 32%
+  }
 }

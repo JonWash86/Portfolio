@@ -31,15 +31,16 @@ img:hover {
 }
 
 .project h3{
+  font-size: 2em;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 8px;
+  left: 8px;
+  background-color:white;
 }
 
 .project h4{
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 66px;
+  background-color: white;
+  left: 100px;
 }
