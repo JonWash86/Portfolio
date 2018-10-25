@@ -7,12 +7,12 @@
 
 img {
   max-width:100%;
-  opacity:0.6;
-  transition: opacity .75s;
+  transition: filter .75s;
+  filter: grayscale(100%);
 }
 
 img:hover {
-  opacity:1;
+  filter: grayscale(0%);
 }
 
 .icon {
