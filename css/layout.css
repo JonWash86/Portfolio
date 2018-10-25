@@ -15,6 +15,10 @@
   display:block;
 }
 
+#aboutZone{
+  min-height:200px;
+}
+
 .footer {
   position: fixed;
   left: 0;

@@ -18,7 +18,8 @@ img:hover {
 #mugshot {
   float:right;
   border-radius: 50%;
-  height: 250px;
+  height: 200px;
+  vertical-align: middle;
 }
 
 .icon {
