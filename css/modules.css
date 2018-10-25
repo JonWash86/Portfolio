@@ -15,6 +15,12 @@ img:hover {
   filter: grayscale(0%);
 }
 
+#mugshot {
+  float:right;
+  border-radius: 50%;
+  height: 250px;
+}
+
 .icon {
   height: 40px;
 }

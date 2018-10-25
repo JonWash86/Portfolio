@@ -12,6 +12,12 @@ hr {
   width:80%;
 }
 
+.headerLine {
+  width: 250px;
+  margin-bottom: .5em;
+  margin-top: -.5em;
+}
+
 p {
   font-family: 'Cardo', serif;
 }
