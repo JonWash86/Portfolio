@@ -16,6 +16,10 @@ p {
   font-family: 'Cardo', serif;
 }
 
+a, li:hover {
+  cursor: pointer;
+}
+
 #name{
   display:inline-block;
   vertical-align:middle;
