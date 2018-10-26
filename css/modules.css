@@ -5,13 +5,13 @@
   font-size:50px;
 }
 
-img {
+.project img {
   max-width:100%;
   transition: filter .75s;
   filter: grayscale(100%);
 }
 
-img:hover {
+.project img:hover {
   filter: grayscale(0%);
 }
 

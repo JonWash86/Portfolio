@@ -1,3 +1,8 @@
+#home, #about, #contact {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
 .sidenav {
   width: 100%;
   padding-left:15px;
@@ -7,13 +12,25 @@
 
 .sidenav ul {
   display: none;
-  transition: display 2s;
   font-family: 'ABeeZee', sans-serif;
+  list-style: none;
+  padding:0;
+  margin:0;
 }
 
-/* .sidenav:hover ul{
-  display:block;
-} */
+.sidenav li {
+  display:inline;
+  border:solid;
+  border-width: 1px 1px 0 1px;
+  margin: 5px 10px 0 10px;
+  padding-left:10px;
+  padding-right:10px;
+}
+
+.selected{
+  background-color: white;
+}
+
 
 #aboutZone{
   min-height:200px;

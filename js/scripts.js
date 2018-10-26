@@ -11,11 +11,9 @@ function projectPop(){
 };
 
 $('.material-icons').mouseover(function(){
-  if ($('.sidenav ul').is(':hidden')){
-    console.log('hello!');
     $('.sidenav ul').slideDown();
-  }
-  else {
-    $('.sidenav ul').hide();
-  }
+});
+
+$('.sidenav ul').mouseleave(function(){
+  $('.sidenav ul').slideUp();
 });
