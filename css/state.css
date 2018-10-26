@@ -24,6 +24,10 @@
    display: block;
  }
 
+ .sidenav li {
+   display: block;
+ }
+
  .project {
    display: inline-block;
  }
