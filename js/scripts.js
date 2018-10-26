@@ -9,3 +9,13 @@ function projectPop(){
     exitPopup.setAttribute('onclick', 'location.relaod()');
   }
 };
+
+$('.material-icons').mouseover(function(){
+  if ($('.sidenav ul').is(':hidden')){
+    console.log('hello!');
+    $('.sidenav ul').slideDown();
+  }
+  else {
+    $('.sidenav ul').hide();
+  }
+});
