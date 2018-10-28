@@ -1,3 +1,10 @@
+const projectView = {};
+
+projectView.initPage = function(){
+  Project.forEach(function(Project){
+    $('#projectZone').append(Project.toHtml());
+  })
+};
 
 function projectPop(){
   for(var u = 0; u < projects.length; u++) {

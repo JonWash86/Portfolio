@@ -25,13 +25,26 @@ Project.handleMainNav = function(){
   });
 };
 
-Project.push(new project('Cookie Stand', 'cookie_stand.jpg', 'Summer 2018'));
-Project.push(new project('BusMall', 'busMall.jpg', 'Summer 2018'));
-Project.push(new project('AlCodeholics Anonymous', 'alcodeholics.jpg', 'Summer 2018'));
+// Project.push(new project('Cookie Stand', 'cookie_stand.jpg', 'Summer 2018'));
+// Project.push(new project('BusMall', 'busMall.jpg', 'Summer 2018'));
+// Project.push(new project('AlCodeholics Anonymous', 'alcodeholics.jpg', 'Summer 2018'));
 
-Project.forEach(function(project){
-  $('#projectZone').append(project.toHtml());
-})
+Project.loadAll = function(rawData) {
+  rawData.forEach(function(ele) {
+    Project.all.push(new Project(ele));
+  })
+}
+
+
+Project.fetchAll = function() {
+  if (localStorage.rawData){
+    Project.loadAll(JSON.parse(localStorage.rawData));
+
+  }
+  else {
+    $.get('data/projects.json', Project.loadAll);
+  }
+}
 
 $(document).ready(function() {
   Project.handleMainNav();
