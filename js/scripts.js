@@ -1,8 +1,10 @@
 const projectView = {};
 
 projectView.initPage = function(){
-  Project.forEach(function(Project){
-    $('#projectZone').append(Project.toHtml());
+  console.log('initializing');
+  Project.all.forEach(function(project){
+    console.log('foo bar');
+    $('#projectZone').append(project.toHtml());
   })
 };
 
