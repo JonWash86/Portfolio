@@ -1,9 +1,36 @@
+@import url('https://fonts.googleapis.com/css?family=ABeeZee|Mukta|Oxygen|Cardo');
+
+main{
+  margin-top: 20px;
+}
+
 body {
   margin:0;
 }
 
+h2{
+  font-family: 'Mukta', sans-serif;
+}
+
 hr {
   width:80%;
+}
+
+.headerLine {
+  width: 250px;
+  margin-bottom: .5em;
+}
+
+.headerline .top {
+  margin-bottom: -1em;
+}
+
+p {
+  font-family: 'Cardo', serif;
+}
+
+a, li:hover {
+  cursor: pointer;
 }
 
 #name{
@@ -11,6 +38,7 @@ hr {
   vertical-align:middle;
   font-size: 24px;
   padding-left: 5px;
+  font-family: 'Oxygen', sans-serif;
 }
 
 .main-content{
@@ -18,7 +46,5 @@ hr {
 }
 
 .main-content h2 {
-  margin-top: 0;
-  padding-top: .83em;
   text-align:center;
 }

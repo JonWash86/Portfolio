@@ -1,4 +1,7 @@
 @media only screen and (min-width: 640px){
+  main {
+    margin-top: 0px;
+  }
  .material-icons {
    display:none;
  }
@@ -24,8 +27,23 @@
    display: block;
  }
 
+ .sidenav li {
+   display: block;
+ }
+
  .project {
    display: inline-block;
-   width: 50%;
  }
+}
+
+@media only screen and (min-width: 840px){
+  .project {
+    width: 48%
+  }
+}
+
+@media only screen and (min-width: 1300px){
+  .project {
+    width: 32%
+  }
 }
