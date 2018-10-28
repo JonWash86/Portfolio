@@ -1,12 +1,13 @@
-var projects = [];
 
-function project(title, thumbnail, dateComplete){
-  this.title = title;
-  this.thumbnail = thumbnail;
-  this.dateComplete = dateComplete;
+function Project(rawDataObj){
+  this.title = rawDataObj.title;
+  this.thumbnail = rawDataObj.thumbnail;
+  this.dateComplete = rawDataObj.dateComplete;
 };
 
-project.prototype.toHtml = function(){
+Project.all = [];
+
+Project.prototype.toHtml = function(){
   var template = $('#template').html();
   console.log(template);
   var templateFiller = Handlebars.compile($('#template').html());
@@ -14,7 +15,7 @@ project.prototype.toHtml = function(){
   return filledTemplate;
 };
 
-projects.handleMainNav = function(){
+Project.handleMainNav = function(){
   $('.tab').on('click', function(event){
     var target = $(this).data('content');
     $('.tab-content').hide();
@@ -24,14 +25,14 @@ projects.handleMainNav = function(){
   });
 };
 
-projects.push(new project('Cookie Stand', 'cookie_stand.jpg', 'Summer 2018'));
-projects.push(new project('BusMall', 'busMall.jpg', 'Summer 2018'));
-projects.push(new project('AlCodeholics Anonymous', 'alcodeholics.jpg', 'Summer 2018'));
+Project.push(new project('Cookie Stand', 'cookie_stand.jpg', 'Summer 2018'));
+Project.push(new project('BusMall', 'busMall.jpg', 'Summer 2018'));
+Project.push(new project('AlCodeholics Anonymous', 'alcodeholics.jpg', 'Summer 2018'));
 
-projects.forEach(function(project){
+Project.forEach(function(project){
   $('#projectZone').append(project.toHtml());
 })
 
 $(document).ready(function() {
-  projects.handleMainNav();
+  Project.handleMainNav();
 });

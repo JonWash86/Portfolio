@@ -1,4 +1,7 @@
 @media only screen and (min-width: 640px){
+  main {
+    margin-top: 0px;
+  }
  .material-icons {
    display:none;
  }

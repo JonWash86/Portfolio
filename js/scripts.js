@@ -6,7 +6,7 @@ function projectPop(){
     var exitPopup = document.createElement('a');
     exitPopup.setAttribute('class', 'exit-popup');
     exitPopup.innerText = 'X';
-    exitPopup.setAttribute('onclick', 'location.relaod()');
+    exitPopup.setAttribute('onclick', 'location.reload()');
   }
 };
 
