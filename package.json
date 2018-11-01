@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/JonWash86/portfolio/issues"
   },
-  "homepage": "https://github.com/JonWash86/portfolio#readme"
+  "homepage": "https://github.com/JonWash86/portfolio#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4"
+  }
 }
