@@ -19,22 +19,26 @@ function projectPop(){
   }
 };
 
-$('.material-icons').mouseover(function(){
-    $('.sidenav ul').slideDown();
-});
+// $('.mininav').hover(function(){
+//     $('.sidenav ul').slideDown();
+// },   function(){
+//   $('.sidenav ul').slideUp();
+// }
+// );
 
 function checkMininav(){
   if($(window).width() < 640){
-    $('.sidenav').addClass('mininav');
+    $('material-icons').on('click', $('.sidenav ul').slideDown());
+    console.log('hiya!')
   }
   else {
-    $('.sidenav').removeClass('mininav');
+    $('header').removeClass('mininav');
   };
 }
 
 $(window).on('load', checkMininav);
 $(window).on('resize', checkMininav);
 
-$('.mininav').mouseleave(function(){
-  $('.sidenav ul').slideUp();
-});
+// $('.mininav').mouseleave(function(){
+//   $('.sidenav ul').slideUp();
+// });
