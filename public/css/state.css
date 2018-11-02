@@ -6,6 +6,15 @@
    display:none;
  }
 
+ #meIcon{
+    display:block;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 125px;
+    padding-right: 15px;
+ }
+
  .main-content{
    padding-left: 205px;
  }
@@ -14,7 +23,7 @@
    height: 100%;
    width: 180px;
    position:fixed;
-   margin-left:0;
+   margin-left:0px;
    text-align: left;
  }
 

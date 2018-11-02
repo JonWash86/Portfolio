@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=ABeeZee|Mukta|Oxygen|Cardo');
 
-main{
+/* main{
   margin-top: 20px;
-}
+} */
 
 body {
   margin:0;
@@ -17,13 +17,30 @@ hr {
   width:80%;
 }
 
-.headerLine {
-  width: 250px;
-  margin-bottom: .5em;
+.sideLine {
+  margin:0 0 1em;
+  line-height:2em;
+  padding:0;
+  position:relative;
+  overflow:hidden;
+  text-align:center;
 }
 
-.headerline .top {
-  margin-bottom: -1em;
+.sideLine:before, .sideLine:after {
+  content:" ";
+  position:absolute;
+  top:50%;
+  margin-left:-999em;
+  height:2px;
+  width:998em;
+  border-top:1px solid black;
+  /* background:rgba(0,0,0,0.2); */
+}
+
+.sideLine:after{
+  left:auto;
+  width:999em;
+  margin:0 0 0 1em;
 }
 
 p {
