@@ -20,11 +20,13 @@
 
 .sidenav li {
   display:inline;
-  border:solid;
-  border-width: 1px 1px 0 1px;
-  margin: 5px 10px 0 10px;
-  padding-left:10px;
-  padding-right:10px;
+  /* border:solid;
+  border-width: 1px 1px 0 1px; */
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  margin: 5px 0px 0 0px;
+  padding-left:25px;
+  padding-right:25px;
 }
 
 .selected{
