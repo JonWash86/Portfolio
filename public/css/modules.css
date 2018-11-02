@@ -11,7 +11,7 @@
   filter: grayscale(100%);
 }
 
-.project img:hover {
+.project img:hover{
   filter: grayscale(0%);
 }
 

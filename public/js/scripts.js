@@ -23,6 +23,18 @@ $('.material-icons').mouseover(function(){
     $('.sidenav ul').slideDown();
 });
 
-$('.sidenav ul').mouseleave(function(){
+function checkMininav(){
+  if($(window).width() < 640){
+    $('.sidenav').addClass('mininav');
+  }
+  else {
+    $('.sidenav').removeClass('mininav');
+  };
+}
+
+$(window).on('load', checkMininav);
+$(window).on('resize', checkMininav);
+
+$('.mininav').mouseleave(function(){
   $('.sidenav ul').slideUp();
 });
