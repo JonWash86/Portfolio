@@ -55,3 +55,12 @@
   background-color: white;
   left: 100px;
 }
+
+#project-pop{
+  position: fixed;
+  background-color:lime;
+  left: 0;
+  top: 0;
+  width: 80%
+  height: 80%
+}
