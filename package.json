@@ -1,0 +1,23 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JonWash86/portfolio.git"
+  },
+  "author": "Jon Washington",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JonWash86/portfolio/issues"
+  },
+  "homepage": "https://github.com/JonWash86/portfolio#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4"
+  }
+}

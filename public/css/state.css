@@ -1,0 +1,60 @@
+@media only screen and (min-width: 640px){
+  main {
+    margin-top: 0px;
+  }
+ .material-icons {
+   display:none;
+ }
+
+ #meIcon{
+    display:block;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 125px;
+    padding-right: 15px;
+ }
+
+ .main-content{
+   padding-left: 205px;
+ }
+
+ .sidenav {
+   height: 100%;
+   width: 180px;
+   position:fixed;
+   margin-left:0px;
+   text-align: left;
+ }
+
+ .sidenav ul {
+   font-size: 20px;
+   color: black;
+   padding-left:15px;
+   padding-top: 5px;
+   padding-bottom: 5px;
+   display: block;
+ }
+
+ .sidenav li {
+   display: block;
+   padding: 5px 0px 5px 20px;
+   border-radius: 25px 0px 0px 25px;
+ }
+
+ .project {
+   display: inline-block;
+ }
+}
+
+@media only screen and (min-width: 840px){
+  .project {
+    width: 48%
+  }
+}
+
+@media only screen and (min-width: 1300px){
+  .project {
+    width: 32%
+  }
+}

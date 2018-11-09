@@ -1,0 +1,54 @@
+.material-icons {
+  display:inline;
+  float:right;
+  padding-right:.75em;
+  font-size:50px;
+}
+
+.project img {
+  max-width:100%;
+  transition: filter .75s;
+  filter: grayscale(100%);
+}
+
+.project img:hover{
+  filter: grayscale(0%);
+}
+
+#mugshot {
+  float:right;
+  border-radius: 50%;
+  height: 200px;
+  vertical-align: middle;
+}
+
+.icon {
+  height: 40px;
+}
+
+#meIcon {
+  border-radius:100%;
+  vertical-align:middle;
+  height: 50px;
+  transition: height .5s;
+}
+
+.project {
+  position: relative;
+  text-align: center;
+}
+
+.project h3{
+  font-size: 2em;
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  background-color:white;
+}
+
+.project h4{
+  position: absolute;
+  top: 66px;
+  background-color: white;
+  left: 100px;
+}
