@@ -11,6 +11,9 @@ body {
 h2{
   font-family: 'Mukta', sans-serif;
   margin: 0;
+  display: flex;
+  text-align: center;
+  align-items: center;
 }
 
 hr {
@@ -28,12 +31,13 @@ hr {
 
 .sideLine:before, .sideLine:after {
   content:" ";
-  position:absolute;
-  top:50%;
-  margin-left:-999em;
+  /* position:absolute; */
+  /* top:50%; */
+  /* margin-left:-999em; */
   height:2px;
   width:998em;
   border-top:1px solid black;
+  margin: 0 0.75em;
   /* background:rgba(0,0,0,0.2); */
 }
 

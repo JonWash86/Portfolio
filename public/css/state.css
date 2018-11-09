@@ -34,27 +34,33 @@
    padding-top: 5px;
    padding-bottom: 5px;
    display: block;
+   padding: 0.5em 0;
  }
 
  .sidenav li {
    display: block;
    padding: 5px 0px 5px 20px;
    border-radius: 25px 0px 0px 25px;
+   transition: background-color 0.5s;
  }
 
  .project {
    display: inline-block;
  }
+
+ .project img {
+   border-radius: 25px;
+ }
 }
 
-@media only screen and (min-width: 840px){
+@media only screen and (min-width: 960px){
   .project {
     width: 48%
   }
 }
 
-@media only screen and (min-width: 1300px){
+/* @media only screen and (min-width: 1300px){
   .project {
     width: 32%
   }
-}
+} */

@@ -19,26 +19,12 @@ function projectPop(){
   }
 };
 
-// $('.mininav').hover(function(){
-//     $('.sidenav ul').slideDown();
-// },   function(){
-//   $('.sidenav ul').slideUp();
-// }
-// );
+$('.material-icons').on ('click', function(){
+    $('.sidenav ul').slideToggle();
+});
 
-function checkMininav(){
-  if($(window).width() < 640){
-    $('material-icons').on('click', $('.sidenav ul').slideDown());
-    console.log('hiya!')
-  }
-  else {
-    $('header').removeClass('mininav');
-  };
-}
 
-$(window).on('load', checkMininav);
-$(window).on('resize', checkMininav);
-
-// $('.mininav').mouseleave(function(){
-//   $('.sidenav ul').slideUp();
-// });
+//this will toggle the "show" class on my popUp.
+$('project').on ('click', function(){
+  $('.popUp').classList.toggle("show");
+});
