@@ -8,7 +8,7 @@
 .project img {
   max-width:100%;
   border-radius: 25px;
-
+  transition: height width .75s;
 }
 
 .project:hover{
@@ -46,6 +46,7 @@
   top: 8px;
   left: 8px;
   background-color:white;
+  transition: top left, .5s
 }
 
 .project h4{

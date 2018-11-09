@@ -9,11 +9,9 @@ Project.all = [];
 
 Project.prototype.toHtml = function(){
   var template = $('#template').html();
-  console.log(template);
   var templateFiller = Handlebars.compile($('#template').html());
   var filledTemplate = templateFiller(this);
   return filledTemplate;
-  console.log(filledTemplate);
 };
 
 Project.handleMainNav = function(){
@@ -40,7 +38,6 @@ Project.fetchAll = function() {
   }
   else {
     $.get('data/projects.json', Project.loadAll);
-    console.log('bar');
   }
 }
 

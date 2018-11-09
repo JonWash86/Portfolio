@@ -17,6 +17,7 @@
 
  .main-content{
    padding-left: 205px;
+   max-width: 900px;
  }
 
  .sidenav {
@@ -45,19 +46,31 @@
  }
 
  .project {
-   display: inline-block;
+   text-align: left;
+   padding-left: 25px;
  }
 
  .project img {
-   border-radius: 25px;
+   /* border-radius: 50%; */
+   object-fit: cover;
+   height: 375px;
+   width: 375px;
+ }
+
+ .project h3{
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%)
  }
 }
 
-@media only screen and (min-width: 960px){
+
+/* @media only screen and (min-width: 960px){
   .project {
-    width: 48%
+    width: 48%;
+    height:;
   }
-}
+} */
 
 /* @media only screen and (min-width: 1300px){
   .project {
