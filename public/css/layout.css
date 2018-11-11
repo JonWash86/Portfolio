@@ -28,6 +28,10 @@
   padding-right:25px;
 }
 
+.sidenav a {
+  all: unset;
+}
+
 .selected{
   background-color: white;
 }

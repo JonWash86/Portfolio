@@ -16,10 +16,7 @@ Project.prototype.toHtml = function(){
 
 Project.handleMainNav = function(){
   $('.tab').on('click', function(event){
-    var target = $(this).data('content');
-    $('.tab-content').hide();
     $('.tab').removeClass('selected');
-    $("#" + target).show();
     $(this).addClass('selected');
   });
 };
