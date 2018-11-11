@@ -8,6 +8,7 @@
   padding-left:15px;
   background-color: #7acfdf;
   z-index: 100;
+  transition: height .5s ease-in-out 1.5s, width .5s;
 }
 
 .sidenav ul {

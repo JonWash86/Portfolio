@@ -7,11 +7,11 @@
 
 .project img {
   max-width:100%;
-  transition: filter .75s;
-  filter: grayscale(100%);
+  border-radius: 25px;
+  transition: height width .75s;
 }
 
-.project img:hover{
+.project:hover{
   filter: grayscale(0%);
 }
 
@@ -36,6 +36,8 @@
 .project {
   position: relative;
   text-align: center;
+  filter: grayscale(100%);
+  transition: filter .75s;
 }
 
 .project h3{
@@ -44,6 +46,7 @@
   top: 8px;
   left: 8px;
   background-color:white;
+  transition: top left, .5s
 }
 
 .project h4{
@@ -51,4 +54,13 @@
   top: 66px;
   background-color: white;
   left: 100px;
+}
+
+#project-pop{
+  position: fixed;
+  background-color:lime;
+  left: 0;
+  top: 0;
+  width: 80%
+  height: 80%
 }
