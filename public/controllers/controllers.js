@@ -1,6 +1,12 @@
 'use strict';
 
 (function(module) {
+  const homeController = {};
+  homeController.show = () => {
+    $("main > section").show();
+  };
+  module.homeController = homeController;
+
   const projectController = {};
   projectController.show = () => {
     $("main > section").hide();

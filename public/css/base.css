@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=ABeeZee|Mukta|Oxygen|Cardo');
 
-/* main{
-  margin-top: 20px;
-} */
-
 body {
   margin:0;
 }
@@ -31,14 +27,10 @@ hr {
 
 .sideLine:before, .sideLine:after {
   content:" ";
-  /* position:absolute; */
-  /* top:50%; */
-  /* margin-left:-999em; */
   height:2px;
   width:998em;
   border-top:1px solid black;
   margin: 0 0.75em;
-  /* background:rgba(0,0,0,0.2); */
 }
 
 .sideLine:after{

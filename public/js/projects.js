@@ -14,7 +14,7 @@ Project.prototype.toHtml = function(){
   return filledTemplate;
 };
 
-Project.handleMainNav = function(){
+Project.handleNavTabs = function(){
   $('.tab').on('click', function(event){
     $('.tab').removeClass('selected');
     $(this).addClass('selected');
@@ -39,5 +39,5 @@ Project.fetchAll = function() {
 }
 
 $(document).ready(function() {
-  Project.handleMainNav();
+  Project.handleNavTabs();
 });
