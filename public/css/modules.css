@@ -59,8 +59,26 @@
 #project-pop{
   position: fixed;
   background-color:lime;
-  left: 0;
-  top: 0;
-  width: 80%
-  height: 80%
+  left: 10%;
+  top: 15%;
+  width: 80%;
+  max-width: 600px;
+  height: 70%;
+  z-index: 999;
+  border-style: solid;
+  border-color: red;
+  border-width: 5px;
 }
+
+#project-pop h1{
+  text-align: center;
+}
+
+#pop-close {
+  background-color: purple;
+  border-radius: 25px;
+};
+
+#pop-close:hover{
+  background-color: yellow;
+};
