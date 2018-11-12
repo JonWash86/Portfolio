@@ -8,11 +8,16 @@ function Project(rawDataObj){
 Project.all = [];
 
 Project.prototype.toHtml = function(){
-  var template = $('#template').html();
   var templateFiller = Handlebars.compile($('#template').html());
   var filledTemplate = templateFiller(this);
   return filledTemplate;
 };
+
+Project.toPop = function(){
+  var popTemplateFiller = Handlebars.compile($('#project-pop').html());
+  var popFilled = popTemplateFiller(this);
+  return popFilled;
+}
 
 Project.handleNavTabs = function(){
   $('.tab').on('click', function(event){

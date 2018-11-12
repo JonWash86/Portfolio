@@ -2,16 +2,19 @@
   {
     "title": "Cookie Stand",
     "thumbnail": "cookie_stand.jpg",
-    "dateComplete": "Summer 2018"
+    "dateComplete": "Summer 2018",
+    "description": "This was a project where I made cookie stand"
   },
   {
     "title": "BusMall",
     "thumbnail": "busMall.jpg",
-    "dateComplete": "Summer 2018"
+    "dateComplete": "Summer 2018",
+    "description": "Just like the Decemberists sang about."
   },
   {
     "title": "AlCodeHolics Anonymous",
     "thumbnail": "alcodeholics.jpg",
-    "dateComplete": "Summer 2018"
+    "dateComplete": "Summer 2018",
+    "description": "Get the pun??"
   }
 ]

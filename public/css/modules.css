@@ -57,6 +57,7 @@
 }
 
 #project-pop{
+  display: none;
   position: fixed;
   background-color:lime;
   left: 10%;
@@ -77,8 +78,10 @@
 #pop-close {
   background-color: purple;
   border-radius: 25px;
-};
+}
 
-#pop-close:hover{
+#pop-close:hover {
+  font-color: orange;
   background-color: yellow;
-};
+  cursor: pointer;
+}
