@@ -4,15 +4,18 @@
   const repoView = {};
 
   const ui = function(){
-    let $about = $('#aboutZone');
-    $about.find('ul').empty();
-    $about.show().siblings().hide();
+    let $aboutZone = $('#aboutZone');
+    $aboutZone.find('ul').empty();
+    $aboutZone.show().siblings().hide();
   };
+
+  const render = Handlebars.compile($('#repo-template').text());
 
   repoView.index = function(){
     ui();
-    $('#about ul').append(
+    $('#aboutZone ul').append(
       repos.with('name').map(render)
     );
   }
-})
+  module.repoView = repoView;
+})(window);

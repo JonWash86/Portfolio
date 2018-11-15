@@ -15,6 +15,20 @@
           <h4>{{dateComplete}}</h4>
         </article>
     </script>
+    <script id='repo-template' type='text/x-handlebars-template'>
+      <li>
+        <a href="{{html_url}}" target="_blank">
+        <h3>{{name}}<h3>
+      </a>
+      <p>Description: {{description}}</p>
+      <p>Language: {{repos.all.language}}</p>
+      <p>Created: {{created_at}}</p>
+      <p>Last updated: {{updated_at}}</p>
+      {{#if watchers_count}}
+        <p>{{watchers_count}} watching this repo</p>
+      {{/if}}
+      </li>
+    </script>
   </head>
   <body>
     <div id="project-pop">
@@ -40,11 +54,12 @@
       </section>
       <br>
       <section id='about' class='tab-content'>
-        <h2 class='sideLine'>About</h2>
         <div id='aboutZone'>
+          <h2 class='sideLine'>About</h2>
           <image id='mugshot' src='images/jon_washington.jpg'>
           <p>Jon Washington is a developer based in Portland, Oregon.</p>
           <p>Dripper, irish americano qui eu, aged barista carajillo con panna, sugar java half and half extraction black iced, pumpkin spice, caramelization a, et affogato filter eu skinny. Dark espresso, siphon macchiato at turkish cream, crema mug, arabica and coffee variety foam flavour carajillo.<p>
+            <ul></ul>
         </div>
         <br>
       </section>
@@ -70,6 +85,8 @@
     <script src='https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.js'></script>
     <script type='text/javascript' src='controllers/controllers.js'></script>
     <script type='text/javascript' src='controllers/routes.js'></script>
+    <script type='text/javascript' src='models/repos.js'></script>
+    <script type='text/javascript' src='view/repoView.js'></script>
     <script type='text/javascript' src='js/projects.js'></script>
     <script type='text/javascript' src='js/scripts.js'></script>
     <script>Project.fetchAll();</script>
