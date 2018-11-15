@@ -9,22 +9,20 @@
 
   const projectController = {};
   projectController.show = () => {
-    $("main > section").hide();
-    $("#projectZone").show();
+    $("#projectZone").show().siblings().hide();
   };
   module.projectController = projectController;
 
   const aboutController = {};
   aboutController.show = () => {
-    $("main > section").hide();
-    $("#about").show();
+    $("#about").show().siblings().hide();
+    repos.requestRepos(repoView.index);
   }
   module.aboutController = aboutController;
 
   const contactController = {};
   contactController.show = () => {
-    $("main > section").hide();
-    $("#contact").show();
+    $("#contact").show().siblings().hide();
   }
   module.contactController = contactController;
 
