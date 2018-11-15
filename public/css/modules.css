@@ -40,6 +40,10 @@
   border-radius: 25px;
 }
 
+#aboutZone a{
+  text-decoration: none;
+}
+
 .repoTitle{
   border-bottom: #f47645 solid;
 }
