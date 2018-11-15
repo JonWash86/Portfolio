@@ -33,6 +33,27 @@
   transition: height .5s;
 }
 
+#aboutZone li{
+  border-color: #f47645;
+  border-style: solid;
+  max-width: 400px;
+  border-radius: 25px;
+}
+
+.repoTitle{
+  border-bottom: #f47645 solid;
+}
+
+#aboutZone ul{
+  list-style-type: none;
+  margin-block-start: 0px;
+  padding-inline-start: 0px;
+}
+
+#aboutZone p{
+  padding-left: 1.5em;
+}
+
 .project {
   position: relative;
   text-align: center;
