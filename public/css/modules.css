@@ -84,15 +84,16 @@
 #project-pop{
   display: none;
   position: fixed;
-  background-color:lime;
+  background-color: #DFF8FC;
   left: 10%;
   top: 15%;
   width: 80%;
   max-width: 600px;
   height: 70%;
   z-index: 999;
+  border-radius: 25px;
   border-style: solid;
-  border-color: red;
+  border-color: #f47645;
   border-width: 5px;
 }
 
@@ -101,12 +102,18 @@
 }
 
 #pop-close {
-  background-color: purple;
+  background-color: #7acfdf;
   border-radius: 25px;
+  padding: 8px;
+  float:right;
+  position: absolute;
+  right: -10px;
+  top: -10px;
 }
 
 #pop-close:hover {
   font-color: orange;
-  background-color: yellow;
+  background-color: #f47645;
   cursor: pointer;
+  padding: 9px;
 }
