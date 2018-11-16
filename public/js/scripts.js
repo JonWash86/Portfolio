@@ -10,11 +10,18 @@ projectView.initPage = function(){
   });
 
   $('.project').on('click', function(){
-    Project.toPop();
     $('#project-pop').css({"display" : "block"});
+    $('#project-pop').empty();
+    var popTarget = $(this).attr('id');
+    console.log(popTarget);
+    Project.all.forEach(function(project){
+      if (popTarget == project.title){
+        $('#project-pop').append(project.toPop());
+      };
+    });
+    $('#pop-close').on('click', function(){
+      $('#project-pop').css({"display" : "none"});
+    });
   });
 
-  $('#pop-close').on('click', function(){
-    $('#project-pop').css({"display" : "none"});
-  });
 };

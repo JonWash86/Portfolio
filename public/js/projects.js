@@ -3,6 +3,7 @@ function Project(rawDataObj){
   this.title = rawDataObj.title;
   this.thumbnail = rawDataObj.thumbnail;
   this.dateComplete = rawDataObj.dateComplete;
+  this.description = rawDataObj.description;
 };
 
 Project.all = [];
@@ -13,8 +14,8 @@ Project.prototype.toHtml = function(){
   return filledTemplate;
 };
 
-Project.toPop = function(){
-  var popTemplateFiller = Handlebars.compile($('#project-pop').html());
+Project.prototype.toPop = function(){
+  var popTemplateFiller = Handlebars.compile($('#popTemplate').html());
   var popFilled = popTemplateFiller(this);
   return popFilled;
 }

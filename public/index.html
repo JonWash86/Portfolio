@@ -9,11 +9,17 @@
     <link rel='stylesheet' href='css/theme.css'>
     <link rel='stylesheet' href='css/state.css'>
     <script id='template' type="text/x-handlebars-template">
-        <article class='project'>
+        <article class='project' id='{{title}}'>
           <img class='thumbnail' src='images/{{thumbnail}}'``>
           <h3>{{title}}</h3>
           <h4>{{dateComplete}}</h4>
         </article>
+    </script>
+    <script id='popTemplate' type='text/x-handlebars-template'>
+      <span id="pop-close">&nbsp; &times; &nbsp;</span>
+      <h1>{{title}}<h1>
+        <h2>{{dateComplete}}</h2>
+        <p>About: {{description}}</p>
     </script>
     <script id='repo-template' type='text/x-handlebars-template'>
       <li>
@@ -33,10 +39,7 @@
   </head>
   <body>
     <div id="project-pop">
-      <span id="pop-close">&nbsp; &times; &nbsp;</span>
-      <h1>{{title}}<h1>
-        <p>{{description}}</p>
-      </div>
+    </div>
     <header class='sidenav mininav'>
       <a href='/'><img id='meIcon' src='images/meIcon.jpg'><h1 id='name'>Jon Washington</h1></a>
       <span class='material-icons'>menu</span>
