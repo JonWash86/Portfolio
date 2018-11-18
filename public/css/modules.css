@@ -117,3 +117,37 @@
   cursor: pointer;
   padding: 9px;
 }
+
+input, textarea {
+  width: 90%;
+  border-radius: 25px;
+  background-color: #7acfdf;
+  color: white;
+  font-family: 'Mukta', sans-serif;
+  font-size: 18px;
+  border: 3px solid #7acfdf;
+  padding: 8px;
+  margin-left: 8px;
+}
+
+input, textarea:focus {
+  outline-width:0;
+}
+
+
+#contact-form {
+  display: flex-box;
+  font-family: 'Mukta', sans-serif;
+  border-style: solid;
+  border-width: 3px;
+  border-radius: 25px;
+  border-color: #7acfdf;
+  padding: 10px 25px 20px 10px;
+  min-width: 300px;
+  max-width: 550px;
+}
+
+#submitButton {
+  max-width: 200px;
+  margin-top: 8px;
+}

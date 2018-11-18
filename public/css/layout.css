@@ -54,5 +54,6 @@
 }
 
 #footerBuffer {
-  height: 50px;
+  height: 75px;
+  display: block;
 }

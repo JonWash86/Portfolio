@@ -13,7 +13,6 @@ projectView.initPage = function(){
     $('#project-pop').css({"display" : "block"});
     $('#project-pop').empty();
     var popTarget = $(this).attr('id');
-    console.log(popTarget);
     Project.all.forEach(function(project){
       if (popTarget == project.title){
         $('#project-pop').append(project.toPop());
