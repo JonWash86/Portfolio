@@ -43,7 +43,7 @@ p {
   font-family: 'Cardo', serif;
 }
 
-a, li:hover {
+a, li, #name, #meIcon:hover {
   cursor: pointer;
 }
 
@@ -65,5 +65,4 @@ a, li:hover {
 
 tab-content {
   transition: all 2s;
-
 }

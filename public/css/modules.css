@@ -95,6 +95,7 @@
   border-style: solid;
   border-color: #f47645;
   border-width: 5px;
+  transition: left 1s linear;
 }
 
 #project-pop h1{
@@ -138,6 +139,7 @@ input, textarea:focus {
 #contact-form {
   display: flex-box;
   font-family: 'Mukta', sans-serif;
+  font-size: 24px;
   border-style: solid;
   border-width: 3px;
   border-radius: 25px;

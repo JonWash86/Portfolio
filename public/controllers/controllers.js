@@ -18,7 +18,6 @@
   aboutController.show = () => {
     $("#about").show().siblings().hide();
     $("#footerBuffer").show();
-    repos.requestRepos(repoView.index);
   }
   module.aboutController = aboutController;
 

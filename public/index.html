@@ -21,21 +21,6 @@
         <h2>{{dateComplete}}</h2>
         <p>About: {{description}}</p>
     </script>
-    <script id='repo-template' type='text/x-handlebars-template'>
-      <li>
-        <a href="{{html_url}}" target="_blank">
-        <h3 class="repoTitle">&nbsp;&nbsp;{{name}}<h3>
-      </a>
-      <p>Description: {{description}}</p>
-      <p>Language: {{repos.all.language}}</p>
-      <p>Created: {{created_at}}</p>
-      <p>Last updated: {{updated_at}}</p>
-      {{#if watchers_count}}
-        <p>{{watchers_count}} watching this repo</p>
-      {{/if}}
-      </li>
-      <br>
-    </script>
   </head>
   <body>
     <div id="project-pop">
@@ -69,9 +54,9 @@
         <h2 class='sideLine'>Contact&nbsp;Me</h2>
         <form id='contact-form'>
           Name:<br>
-          <input type='text' name='name'></input><br><br>
+          <input type='text' name='name'></input><br>
           Email:<br>
-          <input type='email' name='email'></input><br><br>
+          <input type='email' name='email'></input><br>
           What's up?<br>
           <textarea name='message' rows='5' cols='30'></textarea><br>
           <input id='submitButton' type='submit'></input>

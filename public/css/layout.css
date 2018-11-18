@@ -1,6 +1,10 @@
-#home, #about, #contact {
+#about, #contact {
   margin-left: 10px;
   margin-right: 10px;
+}
+
+#about {
+  height: 300px;
 }
 
 .sidenav {
