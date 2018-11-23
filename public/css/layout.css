@@ -36,10 +36,17 @@
   all: unset;
 }
 
+.sidefo {
+  float: right;
+  width: 180px;
+  background-color: purple;
+  border-radius: 25px 0px 0px 25px;
+  margin-top: 20px;
+}
+
 .selected{
   background-color: white;
 }
-
 
 #aboutZone{
   min-height:200px;
@@ -55,6 +62,7 @@
   text-align:center;
   z-index: 100;
   display:inline-block;
+  transition: height .5s ease-in-out 1.5s, width .5s;
 }
 
 #footerBuffer {

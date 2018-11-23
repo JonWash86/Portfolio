@@ -2,6 +2,13 @@
   main {
     margin-top: 0px;
   }
+
+  .footer{
+    width: 190px;
+    border-radius: 0px 25px 25px 0px;
+    margin-bottom: 50px;
+  }
+
  .material-icons {
    display:none;
  }
@@ -18,14 +25,17 @@
  .main-content{
    padding-left: 205px;
    max-width: 900px;
+   padding-right: 200px;
  }
 
  .sidenav {
-   height: 100%;
+   height: 400px;
    width: 180px;
    position:fixed;
    margin-left:0px;
    text-align: left;
+   margin-top: 20px;
+   border-radius: 0px 25px 25px 0px;
  }
 
  .sidenav ul {
@@ -66,6 +76,10 @@
    top: 50%;
    left: 50%;
    transform: translate(-50%, -50%)
+ }
+
+ #contact-form {
+   margin-left: 25px;
  }
 }
 
