@@ -22,5 +22,4 @@ projectView.initPage = function(){
       $('#project-pop').css({"display" : "none"});
     });
   });
-
 };
