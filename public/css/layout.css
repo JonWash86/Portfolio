@@ -50,7 +50,10 @@
 
 .sidefo p {
   font-family: 'ABeeZee', sans-serif;
+}
 
+.sidefoText {
+  opacity: 0;
 }
 
 .selected{
