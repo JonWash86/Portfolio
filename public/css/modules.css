@@ -33,6 +33,31 @@
   transition: height .5s;
 }
 
+#aboutZone li{
+  border-color: #f47645;
+  border-style: solid;
+  max-width: 400px;
+  border-radius: 25px;
+}
+
+#aboutZone a{
+  text-decoration: none;
+}
+
+.repoTitle{
+  border-bottom: #f47645 solid;
+}
+
+#aboutZone ul{
+  list-style-type: none;
+  margin-block-start: 0px;
+  padding-inline-start: 0px;
+}
+
+#aboutZone p{
+  padding-left: 1.5em;
+}
+
 .project {
   position: relative;
   text-align: center;
@@ -57,10 +82,74 @@
 }
 
 #project-pop{
+  display: none;
   position: fixed;
-  background-color:lime;
-  left: 0;
-  top: 0;
-  width: 80%
-  height: 80%
+  background-color: #DFF8FC;
+  left: 10%;
+  top: 15%;
+  width: 80%;
+  max-width: 600px;
+  height: 70%;
+  z-index: 999;
+  border-radius: 25px;
+  border-style: solid;
+  border-color: #f47645;
+  border-width: 5px;
+  transition: left 1s linear;
+}
+
+#project-pop h1{
+  text-align: center;
+}
+
+#pop-close {
+  background-color: #7acfdf;
+  border-radius: 25px;
+  padding: 8px;
+  float:right;
+  position: absolute;
+  right: -10px;
+  top: -10px;
+}
+
+#pop-close:hover {
+  font-color: orange;
+  background-color: #f47645;
+  cursor: pointer;
+  padding: 9px;
+}
+
+input, textarea {
+  width: 90%;
+  border-radius: 25px;
+  background-color: #7acfdf;
+  color: white;
+  font-family: 'Mukta', sans-serif;
+  font-size: 18px;
+  border: 3px solid #7acfdf;
+  padding: 8px;
+  margin-left: 8px;
+}
+
+input, textarea:focus {
+  outline-width:0;
+}
+
+
+#contact-form {
+  display: flex-box;
+  font-family: 'Mukta', sans-serif;
+  font-size: 24px;
+  border-style: solid;
+  border-width: 3px;
+  border-radius: 25px;
+  border-color: #7acfdf;
+  padding: 10px 25px 20px 10px;
+  min-width: 300px;
+  max-width: 550px;
+}
+
+#submitButton {
+  max-width: 200px;
+  margin-top: 8px;
 }

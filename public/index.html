@@ -9,52 +9,70 @@
     <link rel='stylesheet' href='css/theme.css'>
     <link rel='stylesheet' href='css/state.css'>
     <script id='template' type="text/x-handlebars-template">
-        <article class='project'>
+        <article class='project' id='{{title}}'>
           <img class='thumbnail' src='images/{{thumbnail}}'``>
           <h3>{{title}}</h3>
           <h4>{{dateComplete}}</h4>
         </article>
     </script>
+    <script id='popTemplate' type='text/x-handlebars-template'>
+      <span id="pop-close">&nbsp; &times; &nbsp;</span>
+      <h1>{{title}}</h1>
+        <h2>{{dateComplete}}</h2>
+        <p>About: {{description}}</p>
+    </script>
+    <script id='sidefoTemplate' type='text/x-handlebars-template'>
+      <h1 class='sidefoText'>{{pageTitle}}</h1>
+      <p class='sidefoText'>{{pageDescription}}</p>
+    </script>
   </head>
   <body>
     <div id="project-pop">
-      <h1>{{Project Title}}<h1>
-        <p>{{Project description}}</p>
-      </div>
+    </div>
     <header class='sidenav mininav'>
-      <img id='meIcon' src='images/meIcon.jpg'><h1 id='name'>Jon Washington</h1>
+      <a href='/'><img id='meIcon' src='images/meIcon.jpg'><h1 id='name'>Jon Washington</h1></a>
       <span class='material-icons'>menu</span>
       <ul>
-        <li class='tab' data-content='projectZone' href='#'>projects</li>
-        <li class='tab' data-content='about' href='#'>about</li>
-        <li class='tab' data-content='contact' href='#'>contact</li>
+        <a href='/projects'><li class='tab' id='Projects' data-content='projectZone'>projects</li></a>
+        <a href='/about'><li class='tab' id='About' data-content='about'>about</li></a>
+        <a href='/contact'><li class='tab' id='Contact' data-content='contact'>contact</li></a>
       </ul>
     </header>
+    <header class='sidefo'>
+      <h1>SideFo!</h1>
+    </header>
     <main class='main-content'>
-      <div id='home' class='tab-content'>
-        <h2>Home</h2>
-        <p>Cup pumpkin spice café au lait fair trade ristretto foam affogato, ut caramelization, crema in single origin aftertaste, cup, grinder and americano, grounds, mug single origin coffee est froth dark. Espresso, barista, crema aged robusta, extraction java aroma dripper sit frappuccino, caramelization caffeine white aftertaste and steamed, barista extraction cream grinder seasonal trifecta cream. Sweet café au lait cup, single shot body lungo sweet at and ristretto, doppio qui ut sweet turkish affogato organic.</p>
-
-        <p>Mazagran wings beans caramelization arabica dripper turkish, kopi-luwak, brewed, a and aromatic iced single origin. Flavour mazagran breve mocha whipped single shot aromatic, in siphon a café au lait carajillo lungo barista aged spoon coffee.</p>
-      </div>
-      <br>
-      <div id='about' class='tab-content'>
-        <h2 class='sideLine'>About</h2>
+      <br id='pageBreak'>
+      <section id='intro' class='tab-content'>
+        <h1>Hi!</h1>
+        <p></p>
+      </section>
+      <section id='about' class='tab-content'>
         <div id='aboutZone'>
           <image id='mugshot' src='images/jon_washington.jpg'>
           <p>Jon Washington is a developer based in Portland, Oregon.</p>
-          <p>Dripper, irish americano qui eu, aged barista carajillo con panna, sugar java half and half extraction black iced, pumpkin spice, caramelization a, et affogato filter eu skinny. Dark espresso, siphon macchiato at turkish cream, crema mug, arabica and coffee variety foam flavour carajillo.<p>
+          <p>Oh, hello. My name's Jon Washington. Here's <a>my resume.</a></p>
+          <p>I'm a web developer living in Portland, Oregon. I love clean code, keeping data organized, and solving a good puzzle.<p>
+          <p>I'm currently building a few odds and ends on my spare time (<a>take a peek here</a>) and looking for my next full-time project. If you've got something cooking, <a>please drop a line!</a></p>
+            <ul></ul>
         </div>
         <br>
-      </div>
-      <div id='projectZone' class='tab-content'>
-      <h2 class='sideLine'>Projects</h2>
+      </section>
+      <section id='projectZone' class='tab-content'>
       <br>
-      </div>
-      <div id='contact' class='tab-content'>
-        <h2 class='sideLine'>Contact&nbsp;Me</h2>
-        <p>Email me! Form forthcoming soon!</p>
-      </div>
+    </section>
+      <section id='contact' class='tab-content'>
+        <form id='contact-form'>
+          Name:<br>
+          <input type='text' name='name'></input><br>
+          Email:<br>
+          <input type='email' name='email'></input><br>
+          What's up?<br>
+          <textarea name='message' rows='5' cols='30'></textarea><br>
+          <input id='submitButton' type='submit'></input>
+          <br>
+        </form>
+      </section>
       <div id='footerBuffer'>
       </div>
     </main>
@@ -65,9 +83,15 @@
       <a href='https://www.instagram.com/goodolejon/?hl=en'><img class='icon' src='images/instagram.png' alt='instagram'></a>
     </footer>
     <script type='text/javascript' src='js/jquery-3.3.1.min.js'></script>
+    <script src="https://cdn.rawgit.com/visionmedia/page.js/master/page.js"></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.js'></script>
+    <script type='text/javascript' src='controllers/controllers.js'></script>
+    <script type='text/javascript' src='controllers/routes.js'></script>
+    <script type='text/javascript' src='models/repos.js'></script>
+    <script type='text/javascript' src='view/repoView.js'></script>
     <script type='text/javascript' src='js/projects.js'></script>
     <script type='text/javascript' src='js/scripts.js'></script>
+    <script type='text/javascript' src='models/pages.js'></script>
     <script>Project.fetchAll();</script>
   </body>
 </html>

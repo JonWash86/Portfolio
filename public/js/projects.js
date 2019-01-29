@@ -3,23 +3,26 @@ function Project(rawDataObj){
   this.title = rawDataObj.title;
   this.thumbnail = rawDataObj.thumbnail;
   this.dateComplete = rawDataObj.dateComplete;
+  this.description = rawDataObj.description;
 };
 
 Project.all = [];
 
 Project.prototype.toHtml = function(){
-  var template = $('#template').html();
   var templateFiller = Handlebars.compile($('#template').html());
   var filledTemplate = templateFiller(this);
   return filledTemplate;
 };
 
-Project.handleMainNav = function(){
+Project.prototype.toPop = function(){
+  var popTemplateFiller = Handlebars.compile($('#popTemplate').html());
+  var popFilled = popTemplateFiller(this);
+  return popFilled;
+}
+
+Project.handleNavTabs = function(){
   $('.tab').on('click', function(event){
-    var target = $(this).data('content');
-    $('.tab-content').hide();
     $('.tab').removeClass('selected');
-    $("#" + target).show();
     $(this).addClass('selected');
   });
 };
@@ -42,5 +45,5 @@ Project.fetchAll = function() {
 }
 
 $(document).ready(function() {
-  Project.handleMainNav();
+  Project.handleNavTabs();
 });

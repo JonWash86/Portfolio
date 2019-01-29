@@ -12,6 +12,20 @@ app.get('/', function(request, response){
   response.sendFile('index.html', {root: './public'});
 });
 
+app.get('/projects', function(request, response){
+  response.sendFile(`${__dirname}/public/index.html`);
+});
+
+app.get('/about', function(request, response){
+  response.sendFile(`${__dirname}/public/index.html`);
+});
+
+app.get('/contact', function(request, response){
+  response.sendFile(`${__dirname}/public/index.html`);
+});
+
+
+
 app.listen(PORT, function() {
   console.log(`listening on ${PORT}`);
 });
