@@ -22,38 +22,27 @@
     return foFilled;
   };
 
-  // Page.handleSidefo = function(){
-    $('.tab').on('click', function(event){
-      var navTarget = $(this).attr('id');
-      $('.sidefo').animate({
-        right: '-200px'
-      });
-      $('.sidefoText').fadeOut(400);
-      $('h1','.sidefo').fadeOut(400);
-
-      setTimeout(function(){sidefoFill(navTarget)}, 1500);
-      // $('.sidefo').empty();
-      $('.sidefo').delay(800).animate({
-        right: '0px'
-      })
-      // $('.sidefoText').fadeIn(400);
+$('.tab').on('click', function(event){
+  var navTarget = $(this).attr('id');
+  $('.sidefo').animate({
+    right: '-200px'
   });
-
-  // $(document).ready(function() {
-  //   Page.handleSidefo();
-  // });
+  $('.sidefoText').fadeOut(300);
+  $('h1','.sidefo').fadeOut(400);
+  setTimeout(function(){sidefoFill(navTarget)}, 800);
+  $('.sidefo').delay(600).animate({
+    right: '0px'
+  })
+});
 
 function sidefoFill(navTarget){
   $('.sidefo').empty();
   Page.all.forEach(function(page){
     if (navTarget == page.pageTitle){
       $('.sidefo').append(page.toFo());
-      // $('.sidefoText').fadeIn(800);
         $('.sidefoText').animate({
           opacity: 100
-        }, 2000)
+        }, 1800)
     }
   });
 }
-
-// })(window);
