@@ -4,6 +4,8 @@
   const homeController = {};
   homeController.show = () => {
     $("main > section").show();
+    $("main > div").show();
+    $('.tab').removeClass('selected');
   };
   module.homeController = homeController;
 

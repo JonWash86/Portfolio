@@ -42,6 +42,15 @@
 
 #aboutZone a{
   text-decoration: none;
+  color: #87BF7C;
+}
+
+#aboutZone a:visited{
+  color: #87BF7C;
+}
+
+#aboutZone a:hover{
+  color: #9DDD90;
 }
 
 .repoTitle{
@@ -55,7 +64,12 @@
 }
 
 #aboutZone p{
-  padding-left: 1.5em;
+  padding-left: 20px;
+  font-weight: bold;
+}
+
+#intro a{
+  color: #ACF39D;
 }
 
 .project {
