@@ -52,10 +52,16 @@
 
 .sidefo p {
   font-family: 'ABeeZee', sans-serif;
+  margin-left: 10px;
+}
+
+.sidefo h1 {
+  margin-left: 10px;
 }
 
 .sidefoText {
   opacity: 0;
+  margin-left: 10px;
 }
 
 .selected{
