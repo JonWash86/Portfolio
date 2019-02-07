@@ -23,3 +23,7 @@ projectView.initPage = function(){
     });
   });
 };
+
+function successfulForm(){
+  $("#successMessage").text('Thanks for getting in touch!')
+}

@@ -70,13 +70,14 @@
     </div>
       <section id='contact' class='tab-content'>
         <p id="headLine">Drop a line.</p>
-        <form method='post' action='form-to-email.php' id='contact-form'>
+        <form method='post' action='formSend' id='contact-form'>
           Name:<br>
           <input type='text' name='name'></input><br>
           Email:<br>
           <input type='email' name='email'></input><br>
           What's up?<br>
           <textarea name='message' rows='5' cols='30'></textarea><br>
+          <span id="successMessage"></span>
           <input id='submitButton' type='submit'></input>
           <br>
         </form>
