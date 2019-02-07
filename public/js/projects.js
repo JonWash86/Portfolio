@@ -1,6 +1,8 @@
 
 function Project(rawDataObj){
   this.title = rawDataObj.title;
+  this.id = rawDataObj.id;
+  this.color = rawDataObj.color;
   this.thumbnail = rawDataObj.thumbnail;
   this.dateComplete = rawDataObj.dateComplete;
   this.description = rawDataObj.description;

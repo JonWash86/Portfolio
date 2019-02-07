@@ -9,11 +9,13 @@
     <link rel='stylesheet' href='css/theme.css'>
     <link rel='stylesheet' href='css/state.css'>
     <script id='template' type="text/x-handlebars-template">
-        <div class='project' id='{{title}}'>
-          <span id="projectTitle">{{title}}</span>
+      <div id="imageWrapper">
+      <span class="projectTitle">{{title}}</span>
+        <div class='project' id='{{id}}'>
           <img class='thumbnail' src='images/{{thumbnail}}'``>
-          <h4>{{dateComplete}}</h4>
+          </div>
         </div>
+        <script>$('#{{id}}').css("background-color","{{color}}")</script>
     </script>
     <script id='popTemplate' type='text/x-handlebars-template'>
       <span id="pop-close">&nbsp; &times; &nbsp;</span>
