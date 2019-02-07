@@ -9,11 +9,11 @@
     <link rel='stylesheet' href='css/theme.css'>
     <link rel='stylesheet' href='css/state.css'>
     <script id='template' type="text/x-handlebars-template">
-        <article class='project' id='{{title}}'>
+        <div class='project' id='{{title}}'>
+          <span id="projectTitle">{{title}}</span>
           <img class='thumbnail' src='images/{{thumbnail}}'``>
-          <h3>{{title}}</h3>
           <h4>{{dateComplete}}</h4>
-        </article>
+        </div>
     </script>
     <script id='popTemplate' type='text/x-handlebars-template'>
       <span id="pop-close">&nbsp; &times; &nbsp;</span>
@@ -90,6 +90,7 @@
       <a href='https://github.com/JonWash86'><img class='icon' src='images/github.png' alt='github'></a>
       <img class='icon' src='images/twitter.png' alt='twitter'>
       <a href='https://www.instagram.com/goodolejon/?hl=en'><img class='icon' src='images/instagram.png' alt='instagram'></a>
+      <div display="none">Icons made by <a href="https://www.freepik.com/" title="Freepik">Freepik</a> and <a href="https://www.flaticon.com/authors/phatplus" title="phatplus">phatplus</a> from <a href="https://www.flaticon.com/" 			    title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 			    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
     </footer>
     <script type='text/javascript' src='js/jquery-3.3.1.min.js'></script>
     <script src="https://cdn.rawgit.com/visionmedia/page.js/master/page.js"></script>

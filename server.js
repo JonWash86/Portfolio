@@ -55,10 +55,10 @@ app.post('/formSend', function (request, response) {
     }
     else {
       console.log(response);
-      successfulForm();
     }
   });
-  response.writeHead(301, { Location: 'received.html' });
+  response.writeHead(301, { Location: '/contact' });
+  // successfulForm();
   response.end();
 });
 

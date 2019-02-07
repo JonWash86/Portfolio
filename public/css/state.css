@@ -56,24 +56,27 @@
  }
 
  #projectZone {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: 25px;
+    /* display: flex;
+    flex-wrap: wrap; */
+    margin-left: 50px;
  }
 
  .project {
     text-align: left;
-    padding-left: 25px;
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0 4px;
-    width: calc(50% - 10px);
+    /* padding-left: 25px; */
+    /* display: flex;
+    flex-wrap: wrap; */
+    /* padding: 0 4px; */
+    padding-bottom: calc(50% - 30px);
+    height: 0;
+    width: calc(50% - 30px);
+    display: inline-block;
  }
 
  .project img {
    /* border-radius: 50%; */
-   object-fit: cover;
-   height: 375px;
+   /* object-fit: cover; */
+   /* height: 375px; */
    /* width: 375px; */
  }
 

@@ -27,3 +27,12 @@ projectView.initPage = function(){
 function successfulForm(){
   $("#successMessage").text('Thanks for getting in touch!')
 }
+
+
+// $('#contact').submit(function () {
+//   event.preventDefault();
+//   $.ajax(
+//     type:'POST',
+//     url:'/formSend'
+//   )
+// });

@@ -6,13 +6,23 @@
 }
 
 .project img {
-  max-width:100%;
-  border-radius: 25px;
+  max-width:55%;
   transition: height width .75s;
+  /* display:block;
+  margin:auto; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .project:hover{
   filter: grayscale(0%);
+}
+
+#projImageWrap{
+  /* border-radius: 50%;
+  background-color: red; */
 }
 
 #mugshot {
@@ -75,8 +85,8 @@
 .project {
   position: relative;
   text-align: center;
-  filter: grayscale(100%);
-  transition: filter .75s;
+  border-radius: 50%;
+  background-color: red;
 }
 
 .project h3{
