@@ -106,7 +106,8 @@
 }
 
 .projectTitle{
-  position:absolute;
+  display: block;
+  text-align: center;
 }
 
 #project-pop{
@@ -124,6 +125,7 @@
   border-color: #f47645;
   border-width: 5px;
   transition: left 1s linear;
+  padding:20px;
 }
 
 #project-pop h1{

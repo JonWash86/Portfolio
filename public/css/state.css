@@ -75,7 +75,7 @@
    /* padding-bottom: calc(50% - 60px); */
    /* height: 0; */
    display: inline-block;
-
+    padding-right: 35px;
  }
 
  .project img {

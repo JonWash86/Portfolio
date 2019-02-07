@@ -10,16 +10,17 @@
     <link rel='stylesheet' href='css/state.css'>
     <script id='template' type="text/x-handlebars-template">
       <div id="imageWrapper">
-      <span class="projectTitle">{{title}}</span>
         <div class='project' id='{{id}}'>
           <img class='thumbnail' src='images/{{thumbnail}}'``>
           </div>
+          <span class="projectTitle">{{title}}</span>
         </div>
         <script>$('#{{id}}').css("background-color","{{color}}")</script>
     </script>
     <script id='popTemplate' type='text/x-handlebars-template'>
       <span id="pop-close">&nbsp; &times; &nbsp;</span>
       <h1>{{title}}</h1>
+      <a href="{{github}}" target="_blank">github<a> <a href="{{liveSite}}" target="_blank">live site</a>
         <h2>{{dateComplete}}</h2>
         <p>About: {{description}}</p>
     </script>
@@ -88,11 +89,10 @@
       </div>
     </main>
     <footer class='footer'>
-      <a href='mailto:jonathan.washington@gmail.com'><img class='icon' src='images/mail.png' alt='email'></a>
-      <a href='https://github.com/JonWash86'><img class='icon' src='images/github.png' alt='github'></a>
+      <a href='/contact' target="_blank"><img class='icon' src='images/mail.png' alt='email'></a>
+      <a href='https://github.com/JonWash86' target="_blank"><img class='icon' src='images/github.png' alt='github'></a>
       <img class='icon' src='images/twitter.png' alt='twitter'>
-      <a href='https://www.instagram.com/goodolejon/?hl=en'><img class='icon' src='images/instagram.png' alt='instagram'></a>
-      <div display="none">Icons made by <a href="https://www.freepik.com/" title="Freepik">Freepik</a> and <a href="https://www.flaticon.com/authors/phatplus" title="phatplus">phatplus</a> from <a href="https://www.flaticon.com/" 			    title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 			    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+      <a href='https://www.instagram.com/goodolejon/?hl=en' target="_blank"><img class='icon' src='images/instagram.png' alt='instagram'></a>
     </footer>
     <script type='text/javascript' src='js/jquery-3.3.1.min.js'></script>
     <script src="https://cdn.rawgit.com/visionmedia/page.js/master/page.js"></script>

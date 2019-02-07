@@ -2,7 +2,9 @@
   {
     "title": "the Panda Zone",
     "id": "panda_zone",
-    "color":"blue",
+    "github":"",
+    "liveSite":"http://www.pandasforshan.com",
+    "color":"#FE5050",
     "thumbnail": "icons/red-panda.svg",
     "dateComplete": "Winter 2019",
     "description": "My wife and I primarily communicate through cute animal videos, and since red pandas are her favorite, I built this simple Javascript/jQuery application to serve up random red panda videos using the YouTube API. On future builds I’d like to add a button for folks to send me red panda videos they enjoy; as much as I enjoy the research I’d be glad to crowdsource it."
@@ -10,26 +12,20 @@
   {
     "title":"Bonsai Radio",
     "id": "bonsai_radio",
-    "color":"green",
+    "github":"",
+    "liveSite":"",
+    "color":"#AFEAC1",
     "thumbnail": "icons/radio.png",
     "dateComplete": "Winter 2019",
     "description": "A personal project inspired by my fastidiousness about personal listening stats, Bonsai Radio is a web application which stitches together the Spotify and Last.fm APIs so users can manage their Spotify playlists based on a song’s metadata."
   },
   {
-    "title": "Cookie Stand",
-    "thumbnail": "cookie_stand.jpg",
-    "dateComplete": "Summer 2018",
-    "description": "This was a project where I made cookie stand"
-  },
-  {
-    "title": "BusMall",
-    "thumbnail": "busMall.jpg",
-    "dateComplete": "Summer 2018",
-    "description": "Just like the Decemberists sang about."
-  },
-  {
     "title": "AlCodeHolics Anonymous",
-    "thumbnail": "alcodeholics.jpg",
+    "id":"al_code",
+    "github":"",
+    "liveSite":"",
+    "color":"#FECF50",
+    "thumbnail": "icons/martini.svg",
     "dateComplete": "Summer 2018",
     "description": "Get the pun??"
   }
