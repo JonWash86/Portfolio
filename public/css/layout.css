@@ -32,6 +32,11 @@
   padding-right:25px;
 }
 
+.sidenav li:hover:not(.selected){
+  opacity: .5;
+  background-color: white;
+}
+
 .sidenav a {
   all: unset;
 }

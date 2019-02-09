@@ -2,8 +2,9 @@
   {
     "title": "the Panda Zone",
     "id": "panda_zone",
-    "github":"",
-    "liveSite":"http://www.pandasforshan.com",
+    "github":" <a href=\"https://github.com/JonWash86/pandaZone\" target=\"_blank\">github<a>",
+    "liveSite":"<a href=\"http://www.pandasforshan.com\" target=\"_blank\">Live site</a>",
+    "technologies":"",
     "color":"#FE5050",
     "thumbnail": "icons/red-panda.svg",
     "dateComplete": "Winter 2019",
@@ -12,21 +13,23 @@
   {
     "title":"Bonsai Radio",
     "id": "bonsai_radio",
-    "github":"",
+    "github":"<a href=\"https://github.com/JonWash86/Station-Manager\" target=\"_blank\">github<a>",
     "liveSite":"",
+    "technologies":"",
     "color":"#AFEAC1",
     "thumbnail": "icons/radio.png",
-    "dateComplete": "Winter 2019",
-    "description": "A personal project inspired by my fastidiousness about personal listening stats, Bonsai Radio is a web application which stitches together the Spotify and Last.fm APIs so users can manage their Spotify playlists based on a song’s metadata."
+    "dateComplete": "Winter 2019 (ongoing)",
+    "description": "A personal project inspired by my fastidiousness about personal listening stats, Bonsai Radio is a web application which stitches together the Spotify and Last.fm APIs so users can manage their Spotify playlists based on a song’s metadata.<br>I'm currently working out data management before fully deploying online, but please check out the github and feel free to try it out!"
   },
   {
     "title": "AlCodeHolics Anonymous",
     "id":"al_code",
-    "github":"",
-    "liveSite":"",
+    "github":"<a href=\"https://github.com/JonWash86/alcodeholics_anonymous\" target=\"_blank\">github<a>",
+    "liveSite":"<a href=\"https://jonwash86.github.io/alcodeholics_anonymous/Homepage.html\" target=\"_blank\">Live site</a>",
+    "technologies":"",
     "color":"#FECF50",
     "thumbnail": "icons/martini.svg",
     "dateComplete": "Summer 2018",
-    "description": "Get the pun??"
+    "description": "Get the pun??<br><br>This site was built as a mid-final project during my time at Alchemy Code Lab. I'd like to take another pass at the design in the future, however I'm very proud of the JavaScript under the hood, which was my primary focus in this team project.<br><br>If you select a base liquor and any/all of the household ingredients, this application will tell you what cocktails you can mix, as well as the cocktails you're the fewest ingredients away from being able to fix up."
   }
 ]
