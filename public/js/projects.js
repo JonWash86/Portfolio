@@ -1,9 +1,13 @@
 
 function Project(rawDataObj){
   this.title = rawDataObj.title;
+  this.id = rawDataObj.id;
+  this.color = rawDataObj.color;
   this.thumbnail = rawDataObj.thumbnail;
   this.dateComplete = rawDataObj.dateComplete;
   this.description = rawDataObj.description;
+  this.liveSite = rawDataObj.liveSite;
+  this.github = rawDataObj.github;
 };
 
 Project.all = [];

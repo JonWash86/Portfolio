@@ -9,17 +9,20 @@
     <link rel='stylesheet' href='css/theme.css'>
     <link rel='stylesheet' href='css/state.css'>
     <script id='template' type="text/x-handlebars-template">
-        <article class='project' id='{{title}}'>
+      <div id="imageWrapper">
+        <div class='project' id='{{id}}'>
           <img class='thumbnail' src='images/{{thumbnail}}'``>
-          <h3>{{title}}</h3>
-          <h4>{{dateComplete}}</h4>
-        </article>
+          </div>
+          <span class="projectTitle">{{title}}</span>
+        </div>
+        <script>$('#{{id}}').css("background-color","{{color}}")</script>
     </script>
     <script id='popTemplate' type='text/x-handlebars-template'>
       <span id="pop-close">&nbsp; &times; &nbsp;</span>
       <h1>{{title}}</h1>
+      <p>{{{github}}} {{{liveSite}}}</p>
         <h2>{{dateComplete}}</h2>
-        <p>About: {{description}}</p>
+        <p>{{{description}}}</p>
     </script>
     <script id='sidefoTemplate' type='text/x-handlebars-template'>
       <h1 class='sidefoText'>{{pageTitle}}</h1>
@@ -39,7 +42,7 @@
       </ul>
     </header>
     <header class='sidefo'>
-      <h1>SideFo!</h1>
+      <h1></h1>
     </header>
     <main class='main-content'>
       <br id='pageBreak'>
@@ -47,9 +50,9 @@
         <div id='aboutZone'>
           <image id='mugshot' src='images/jon_washington.jpg'>
           <p id="headLine">Oh, hello.</p>
-            <p>My name's Jon Washington. Here's <a href="images/Washington_Jonathan_Resume.pdf">my resume.</a></p>
+            <p>My name's Jon Washington. Here's <a href="images/Washington_Jonathan_Resume.pdf" target="_blank">my resume.</a></p>
           <p>I'm a web developer living in Portland, Oregon. I love clean code, keeping data organized, and solving a good puzzle.<p>
-          <p>I'm currently building a few odds and ends on my spare time (<a>take a peek here</a>) and looking for my next full-time project. If you've got something cooking, <a>please drop a line!</a></p>
+          <p>I'm currently building a few odds and ends on my spare time (<a href="/projects">take a peek here</a>) and looking for my next full-time project. If you've got something cooking, <a href="/contact" target="_blank">please drop a line!</a></p>
             <ul></ul>
         </div>
         <br>
@@ -70,13 +73,14 @@
     </div>
       <section id='contact' class='tab-content'>
         <p id="headLine">Drop a line.</p>
-        <form id='contact-form'>
+        <form method='post' action='formSend' id='contact-form'>
           Name:<br>
           <input type='text' name='name'></input><br>
           Email:<br>
           <input type='email' name='email'></input><br>
           What's up?<br>
           <textarea name='message' rows='5' cols='30'></textarea><br>
+          <span id="successMessage"></span>
           <input id='submitButton' type='submit'></input>
           <br>
         </form>
@@ -85,10 +89,10 @@
       </div>
     </main>
     <footer class='footer'>
-      <a href='mailto:jonathan.washington@gmail.com'><img class='icon' src='images/mail.png' alt='email'></a>
-      <a href='https://github.com/JonWash86'><img class='icon' src='images/github.png' alt='github'></a>
-      <img class='icon' src='images/twitter.png' alt='twitter'>
-      <a href='https://www.instagram.com/goodolejon/?hl=en'><img class='icon' src='images/instagram.png' alt='instagram'></a>
+      <a href='/contact' target="_blank"><img class='icon' src='images/mail.png' alt='email'></a>
+      <a href='https://github.com/JonWash86' target="_blank"><img class='icon' src='images/github.png' alt='github'></a>
+      <a href="https://twitter.com/GoodOleJon" target="_blank"><img class='icon' src='images/twitter.png' alt='twitter'></a>
+      <a href='https://www.instagram.com/goodolejon/?hl=en' target="_blank"><img class='icon' src='images/instagram.png' alt='instagram'></a>
     </footer>
     <script type='text/javascript' src='js/jquery-3.3.1.min.js'></script>
     <script src="https://cdn.rawgit.com/visionmedia/page.js/master/page.js"></script>

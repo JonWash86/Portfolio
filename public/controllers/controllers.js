@@ -6,6 +6,7 @@
     $("main > section").show();
     $("main > div").show();
     $('.tab').removeClass('selected');
+    $('.sidefo').empty();
   };
   module.homeController = homeController;
 

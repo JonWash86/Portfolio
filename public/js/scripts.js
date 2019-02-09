@@ -14,7 +14,7 @@ projectView.initPage = function(){
     $('#project-pop').empty();
     var popTarget = $(this).attr('id');
     Project.all.forEach(function(project){
-      if (popTarget == project.title){
+      if (popTarget == project.id){
         $('#project-pop').append(project.toPop());
       };
     });
@@ -23,3 +23,16 @@ projectView.initPage = function(){
     });
   });
 };
+
+function successfulForm(){
+  $("#successMessage").text('Thanks for getting in touch!')
+}
+
+
+// $('#contact').submit(function () {
+//   event.preventDefault();
+//   $.ajax(
+//     type:'POST',
+//     url:'/formSend'
+//   )
+// });
