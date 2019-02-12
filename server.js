@@ -32,14 +32,15 @@ app.post('/post-test', function(request, response) {
 });
 
 
+
 app.post('/formSend', function (request, response) {
   const smtpTrans = nodemailer.createTransport({
     host: 'smtp.gmail.com',
     port: 465,
     secure: true,
     auth: {
-      user: 'jonathan.washington@gmail.com',
-      pass: '######'
+      user: process.env.GMAIL_ACCT,
+      pass: process.env.GMAIL_PW
     }
   });
   const mailOptions = {
