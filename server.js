@@ -34,6 +34,8 @@ app.post('/post-test', function(request, response) {
 
 
 app.post('/formSend', function (request, response) {
+  console.log(process.env.GMAIL_PW);
+  console.log(process.env.GMAIL_ACCT);
   const smtpTrans = nodemailer.createTransport({
     host: 'smtp.gmail.com',
     port: 465,
