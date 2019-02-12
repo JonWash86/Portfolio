@@ -34,15 +34,13 @@ app.post('/post-test', function(request, response) {
 
 
 app.post('/formSend', function (request, response) {
-  var gmacct = process.env.GMAIL_ACCT;
-  var gmpm = process.env.GMAIL_PW;
   const smtpTrans = nodemailer.createTransport({
     host: 'smtp.gmail.com',
     port: 465,
     secure: true,
     auth: {
-      user: gmacct,
-      pass: gmpm
+      user: process.env.GMAIL_ACCT,
+      pass: process.env.GMAIL_PW
     }
   });
   const mailOptions = {
