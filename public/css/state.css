@@ -82,7 +82,7 @@
  }
 
  #imageWrapper{
-   width: calc(50% - 60px);
+   width: calc(100% - 60px);
    /* padding-bottom: calc(50% - 60px); */
    /* height: 0; */
    display: inline-block;
@@ -90,6 +90,8 @@
  }
 
  .project img {
+   position: absolute;
+   transform: translate(-50%, -50%);
    /* border-radius: 50%; */
    /* object-fit: cover; */
    /* height: 375px; */
@@ -99,7 +101,7 @@
  .project h3{
    top: 50%;
    left: 50%;
-   transform: translate(-50%, -50%)
+   transform: translate(-50%, -50%);
  }
 
  #contact-form {
@@ -111,6 +113,10 @@
 @media only screen and (min-width: 830px){
   #project-pop {
     left:250px;
+  }
+  #imageWrapper{
+    width: calc(50% - 60px);
+    /* display: inline-block; */
   }
 
 
