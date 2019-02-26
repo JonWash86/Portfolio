@@ -209,3 +209,12 @@ input, textarea:focus {
 .g-recaptcha {
   display:none;
 }
+
+.grecaptcha-badge{
+  display:none;
+}
+
+#captchaLegalMumboJumbo{
+  font-size: 10px;
+  color: gray;
+}
