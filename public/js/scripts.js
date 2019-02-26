@@ -29,6 +29,12 @@ function successfulForm(){
 }
 
 
+$('#submitButton').on('click', function(){
+  grecaptcha.render();
+
+})
+
+
 // $('#contact').submit(function () {
 //   event.preventDefault();
 //   $.ajax(

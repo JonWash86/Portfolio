@@ -8,6 +8,7 @@
     <link rel='stylesheet' href='css/modules.css'>
     <link rel='stylesheet' href='css/theme.css'>
     <link rel='stylesheet' href='css/state.css'>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <script id='template' type="text/x-handlebars-template">
       <div id="imageWrapper">
         <div class='project' id='{{id}}'>
@@ -82,6 +83,11 @@
           <textarea name='message' rows='5' cols='30'></textarea><br>
           <span id="successMessage"></span>
           <input id='submitButton' type='submit'></input>
+          <div class="g-recaptcha"
+               data-sitekey="6Lc945MUAAAAADWyZiqI7gh0rAsK61l56Oq_9djV"
+               data-callback="onSubmit"
+               data-size="invisible">
+          </div>
           <br>
         </form>
       </section>

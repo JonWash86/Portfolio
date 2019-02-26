@@ -14,12 +14,12 @@
     "title":"Bonsai Radio",
     "id": "bonsai_radio",
     "github":"<a href=\"https://github.com/JonWash86/Station-Manager\" target=\"_blank\">github<a>",
-    "liveSite":"",
+    "liveSite":"<a href=\"www.bonsairadio.com\" target=\"_blank\">Live site</a>",
     "technologies":"",
     "color":"#AFEAC1",
     "thumbnail": "icons/radio.png",
-    "dateComplete": "Winter 2019 (ongoing)",
-    "description": "A personal project inspired by my fastidiousness about personal listening stats, Bonsai Radio is a web application which stitches together the Spotify and Last.fm APIs so users can manage their Spotify playlists based on a song’s metadata.<br>I'm currently working out data management before fully deploying online, but please check out the github and feel free to try it out!"
+    "dateComplete": "Winter 2019",
+    "description": "A personal project inspired by my fastidiousness about personal listening stats, Bonsai Radio is a web application which stitches together the Spotify and Last.fm APIs so users can manage their Spotify playlists based on a song’s metadata.<br>I'm quite proud to say I've officially deployed version one! Please check it out and let me know what features you want to see with v2."
   },
   {
     "title": "AlCodeHolics Anonymous",
