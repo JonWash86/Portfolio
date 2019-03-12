@@ -31,7 +31,6 @@ function successfulForm(){
 
 $('#submitButton').on('click', function(){
   grecaptcha.render();
-
 })
 
 
