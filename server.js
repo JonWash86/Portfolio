@@ -8,6 +8,14 @@ const bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({extended: true}));
 const PORT = process.env.PORT || 3000;
 
+var reCAPTCHA = require('recaptcha2');
+
+var recaptcha = new reCAPTCHA({
+  siteKey: '6Lc945MUAAAAADWyZiqI7gh0rAsK61l56Oq_9djV', // retrieved during setup
+  secretKey: '6Lc945MUAAAAAK9Vos1NogrHZa2dxibRSkEQZuQw', // retrieved during setup
+  ssl: false
+});
+
 app.use(express.static('./public'));
 
 app.get('/', function(request, response){
@@ -49,15 +57,25 @@ app.post('/formSend', function (request, response) {
     subject: 'New message from jonwashington.net',
     text: `${request.body.name} (${request.body.email}) says: ${request.body.message}`
   };
-  smtpTrans.sendMail(mailOptions, function (error, info) {
-    console.log(response);
-    if (error) {
-      return console.log(error);
-    }
-    else {
+
+  recaptcha.validate(key)
+  .then(function(){
+    smtpTrans.sendMail(mailOptions, function (error, info) {
       console.log(response);
-    }
+      if (error) {
+        return console.log(error);
+      }
+      else {
+        console.log(response);
+      }
+    });
+    // validated and secure
+  })
+  .catch(function(errorCodes){
+    // invalid
+    console.log(recaptcha.translateErrors(errorCodes)); // translate error codes to human readable text
   });
+
   response.writeHead(301, { Location: '/contact' });
   // successfulForm();
   response.end();
