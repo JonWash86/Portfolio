@@ -30,7 +30,14 @@ function successfulForm(){
 
 
 $('#submitButton').on('click', function(){
-  grecaptcha.render();
+  console.log('we\'re working on it!')
+  response = grecaptcha.getResponse();
+  if (response.length === 0) {
+    alert('it didn\'t work!');
+  }
+  else {
+    alert( 'it worked!' );
+  }
 })
 
 
