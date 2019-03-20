@@ -29,9 +29,18 @@ function successfulForm(){
 }
 
 
+var onloadCallback = function() {
+  grecaptcha.render('google_recaptcha', {
+    'sitekey' : '6Lc945MUAAAAADWyZiqI7gh0rAsK61l56Oq_9djV'
+  });
+};
+
 $('#submitButton').on('click', function(){
   console.log('we\'re working on it!')
+  grecaptcha.render();
   response = grecaptcha.getResponse();
+  alert(response);
+  console.log(response);
   if (response.length === 0) {
     alert('it didn\'t work!');
   }
@@ -41,10 +50,10 @@ $('#submitButton').on('click', function(){
 })
 
 
-// $('#contact').submit(function () {
-//   event.preventDefault();
-//   $.ajax(
-//     type:'POST',
-//     url:'/formSend'
-//   )
-// });
+function formSubmission(){
+  event.preventDefault();
+  $.ajax({
+    type:'POST',
+    url:'/formSend'
+  })
+};
