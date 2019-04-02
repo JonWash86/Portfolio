@@ -29,31 +29,31 @@ function successfulForm(){
 }
 
 
-var onloadCallback = function() {
-  grecaptcha.render('google_recaptcha', {
-    'sitekey' : '6Lc945MUAAAAADWyZiqI7gh0rAsK61l56Oq_9djV'
-  });
-};
-
 $('#submitButton').on('click', function(){
-  console.log('we\'re working on it!')
-  grecaptcha.render();
-  response = grecaptcha.getResponse();
-  alert(response);
-  console.log(response);
-  if (response.length === 0) {
-    alert('it didn\'t work!');
-  }
-  else {
-    alert( 'it worked!' );
-  }
+  console.log('we\'re working on it!');
+  // debugger;
+  // grecaptcha.render();
+  // response = grecaptcha.getResponse();
+  // alert(response);
+  // debugger;
+  // console.log(response);
+  // debugger;
+  // if (response.length === 0) {
+  //   alert('it didn\'t work!');
+  // }
+  // else {
+  //   alert( 'it worked!' );
+  // }
 })
 
 
 function formSubmission(){
+  console.log('submitting!')
+  debugger;
   event.preventDefault();
   $.ajax({
     type:'POST',
-    url:'/formSend'
+    url:'/formSend',
+    data: { name: 'bobby joe', email: 'boby@email.com', message: 'hi Im bobby jo'}
   })
 };

@@ -58,22 +58,22 @@ app.post('/formSend', function (request, response) {
     text: `${request.body.name} (${request.body.email}) says: ${request.body.message}`
   };
 
-  recaptcha.validate(key)
+  recaptcha.validate('6Lc945MUAAAAADWyZiqI7gh0rAsK61l56Oq_9djV')
   .then(function(){
     smtpTrans.sendMail(mailOptions, function (error, info) {
-      console.log(response);
+      console.log('The response is ' + response);
       if (error) {
-        return console.log(error);
+        return console.log('there has been an error: ' + error);
       }
       else {
-        console.log(response);
+        console.log('This worked! ' + response);
       }
     });
     // validated and secure
   })
   .catch(function(errorCodes){
     // invalid
-    console.log(recaptcha.translateErrors(errorCodes)); // translate error codes to human readable text
+    console.log("Something didn't work in the recaptcha " + recaptcha.translateErrors(errorCodes)); // translate error codes to human readable text
   });
 
   response.writeHead(301, { Location: '/contact' });
