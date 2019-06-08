@@ -29,8 +29,8 @@ function successfulForm(){
 }
 
 
-$('#submitButton').on('click', function(){
-  console.log('we\'re working on it!');
+// $('#submitButton').on('click', function(){
+//   console.log('we\'re working on it!');
   // debugger;
   // grecaptcha.render();
   // response = grecaptcha.getResponse();
@@ -44,7 +44,7 @@ $('#submitButton').on('click', function(){
   // else {
   //   alert( 'it worked!' );
   // }
-})
+// })
 
 
 function formSubmission(){

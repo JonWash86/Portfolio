@@ -76,7 +76,7 @@ app.post('/formSend', function (request, response) {
     console.log("Something didn't work in the recaptcha " + recaptcha.translateErrors(errorCodes)); // translate error codes to human readable text
   });
 
-  response.writeHead(301, { Location: '/contact' });
+  // response.writeHead(301, { Location: '/contact' });
   // successfulForm();
   response.end();
 });

@@ -10,7 +10,11 @@
     <link rel='stylesheet' href='css/theme.css'>
     <link rel='stylesheet' href='css/state.css'>
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
-    <script src="https://www.google.com/recaptcha/api.js?render=6Lc945MUAAAAADWyZiqI7gh0rAsK61l56Oq_9djV"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script type="text/javascript">function onSubmit(token){
+      console.log('hi i am in onsubmit');
+      $('#contact-form').submit();
+    }</script>
     <script id='template' type="text/x-handlebars-template">
       <div id="imageWrapper">
         <div class='project' id='{{id}}'>
@@ -76,8 +80,7 @@
     </div>
       <section id='contact' class='tab-content'>
         <p id="headLine">Drop a line.</p>
-        <form method='post' action='formSend' id='contact-form'>
-        <form id='contact-form'>
+        <form method='post' action='/formSend' id='contact-form'>
           Name:<br>
           <input type='text' name='name'></input><br>
           Email:<br>
@@ -85,7 +88,7 @@
           What's up?<br>
           <textarea name='message' rows='5' cols='30'></textarea><br>
           <span id="successMessage"></span>
-          <input id='submitButton' type='submit'></input>
+          <input id='submitButton' class='g-recaptcha' data-sitekey='6Lc945MUAAAAADWyZiqI7gh0rAsK61l56Oq_9djV' data-callback='onSubmit' type='submit'></input>
           <br><span id='captchaLegalMumboJumbo'>This site is protected by reCAPTCHA and the Google
     <a href="https://policies.google.com/privacy">Privacy Policy</a> and
     <a href="https://policies.google.com/terms">Terms of Service</a> apply.</span>
