@@ -87,15 +87,9 @@
 
  #imageWrapper{
    width: calc(100% - 60px);
-   /* padding-bottom: calc(50% - 60px); */
-   /* height: 0; */
    display: inline-block;
     padding-right: 35px;
  }
-
- /* #imageWrapper:hover{
-   opacity: 0.75;
- } */
 
  .project img {
    position: absolute;
