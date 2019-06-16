@@ -29,16 +29,31 @@ function successfulForm(){
 }
 
 
-$('#submitButton').on('click', function(){
-  grecaptcha.render();
+// $('#submitButton').on('click', function(){
+//   console.log('we\'re working on it!');
+  // debugger;
+  // grecaptcha.render();
+  // response = grecaptcha.getResponse();
+  // alert(response);
+  // debugger;
+  // console.log(response);
+  // debugger;
+  // if (response.length === 0) {
+  //   alert('it didn\'t work!');
+  // }
+  // else {
+  //   alert( 'it worked!' );
+  // }
+// })
 
-})
 
-
-// $('#contact').submit(function () {
-//   event.preventDefault();
-//   $.ajax(
-//     type:'POST',
-//     url:'/formSend'
-//   )
-// });
+function formSubmission(){
+  console.log('submitting!')
+  debugger;
+  event.preventDefault();
+  $.ajax({
+    type:'POST',
+    url:'/formSend',
+    data: { name: 'bobby joe', email: 'boby@email.com', message: 'hi Im bobby jo'}
+  })
+};

@@ -4,6 +4,9 @@
 
 @import url('https://fonts.googleapis.com/css?family=Volkhov:700');
 
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300&display=swap');
+
+
 body {
   margin:0;
 }
@@ -44,7 +47,7 @@ hr {
 }
 
 p {
-  font-family: 'Cardo', serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 18px;
 }
 
@@ -54,7 +57,7 @@ a, li, #name, #meIcon:hover {
 
 #headLine{
   font-size: 26px;
-  font-family: 'Volkhov', serif;
+  font-family: 'Montserrat', sans-serif;
   padding-left: 20px;
 
 }

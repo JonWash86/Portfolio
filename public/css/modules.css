@@ -207,6 +207,10 @@ input, textarea:focus {
 }
 
 .g-recaptcha {
+  /* display:none; */
+}
+
+#google_recaptcha {
   display:none;
 }
 
