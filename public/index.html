@@ -10,11 +10,10 @@
     <link rel='stylesheet' href='css/theme.css'>
     <link rel='stylesheet' href='css/state.css'>
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-    <script type="text/javascript">function onSubmit(token){
-      console.log('hi i am in onsubmit');
+    <!-- <script type="text/javascript">function onSubmit(token){
+      console.log('why it work here');
       $('#contact-form').submit();
-    }</script>
+    }</script> -->
     <script id='template' type="text/x-handlebars-template">
       <div id="imageWrapper">
         <div class='project' id='{{id}}'>
@@ -80,7 +79,7 @@
     </div>
       <section id='contact' class='tab-content'>
         <p id="headLine">Drop a line.</p>
-        <form method='post' action='/formSend' id='contact-form'>
+        <form method='post' onsubmit='formSubmission()' id='contact-form'>
           Name:<br>
           <input type='text' name='name'></input><br>
           Email:<br>
@@ -88,16 +87,15 @@
           What's up?<br>
           <textarea name='message' rows='5' cols='30'></textarea><br>
           <span id="successMessage"></span>
-          <input id='submitButton' class='g-recaptcha' data-sitekey='6Lc945MUAAAAADWyZiqI7gh0rAsK61l56Oq_9djV' data-callback='onSubmit' type='submit'></input>
-          <br><span id='captchaLegalMumboJumbo'>This site is protected by reCAPTCHA and the Google
-    <a href="https://policies.google.com/privacy">Privacy Policy</a> and
-    <a href="https://policies.google.com/terms">Terms of Service</a> apply.</span>
-
-          <!-- <div class="g-recaptcha"
-               data-sitekey="6Lc945MUAAAAADWyZiqI7gh0rAsK61l56Oq_9djV"
-               data-size="invisible"
-               data-callback="formSubmission">
-          </div> -->
+          <input id='submitButton' onclick='onFormSubmit' type='submit'></input>
+          <div class='blankField'>
+            Please leave this blank
+            <input type='text' id='blankField' value=''></input>
+          </div>
+          <div class='untouchedField'>
+            Please do not change this field.
+            <input id='untouched' value='untouched_123'></input>
+          </div>
           <br>
         </form>
       </section>

@@ -8,14 +8,6 @@ const bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({extended: true}));
 const PORT = process.env.PORT || 3000;
 
-var reCAPTCHA = require('recaptcha2');
-
-var recaptcha = new reCAPTCHA({
-  siteKey: '6Lc945MUAAAAADWyZiqI7gh0rAsK61l56Oq_9djV', // retrieved during setup
-  secretKey: '6Lc945MUAAAAAK9Vos1NogrHZa2dxibRSkEQZuQw', // retrieved during setup
-  ssl: false
-});
-
 app.use(express.static('./public'));
 
 app.get('/', function(request, response){
@@ -36,12 +28,10 @@ app.get('/contact', function(request, response){
 
 app.post('/post-test', function(request, response) {
   response.send(request.body);
-
 });
 
-
-
 app.post('/formSend', function (request, response) {
+  console.log('the request made it to the back end');
   const smtpTrans = nodemailer.createTransport({
     host: 'smtp.gmail.com',
     port: 465,
@@ -51,6 +41,7 @@ app.post('/formSend', function (request, response) {
       pass: process.env.GMAIL_PW
     }
   });
+
   const mailOptions = {
     from: request.body.name,
     to: 'jonathan.washington@gmail.com',
@@ -58,26 +49,16 @@ app.post('/formSend', function (request, response) {
     text: `${request.body.name} (${request.body.email}) says: ${request.body.message}`
   };
 
-  recaptcha.validate('6Lc945MUAAAAADWyZiqI7gh0rAsK61l56Oq_9djV')
-  .then(function(){
-    smtpTrans.sendMail(mailOptions, function (error, info) {
-      console.log('The response is ' + response);
-      if (error) {
-        return console.log('there has been an error: ' + error);
-      }
-      else {
-        console.log('This worked! ' + response);
-      }
-    });
-    // validated and secure
-  })
-  .catch(function(errorCodes){
-    // invalid
-    console.log("Something didn't work in the recaptcha " + recaptcha.translateErrors(errorCodes)); // translate error codes to human readable text
+  smtpTrans.sendMail(mailOptions, function (error, info) {
+    console.log('The response is ' + JSON.stringify(response));
+    if (error) {
+      return console.log('there has been an error: ' + error);
+    }
+    else {
+      console.log('This worked! ' + response);
+    }
   });
 
-  // response.writeHead(301, { Location: '/contact' });
-  // successfulForm();
   response.end();
 });
 

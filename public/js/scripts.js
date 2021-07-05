@@ -3,7 +3,9 @@ const projectView = {};
 projectView.initPage = function(){
   Project.all.forEach(function(project){
     $('#projectZone').append(project.toHtml());
-  })
+  });
+
+  $('.untouchedField').hide();
 
   $('.material-icons').on ('click', function(){
       $('.sidenav ul').slideToggle();
@@ -28,32 +30,20 @@ function successfulForm(){
   $("#successMessage").text('Thanks for getting in touch!')
 }
 
-
-// $('#submitButton').on('click', function(){
-//   console.log('we\'re working on it!');
-  // debugger;
-  // grecaptcha.render();
-  // response = grecaptcha.getResponse();
-  // alert(response);
-  // debugger;
-  // console.log(response);
-  // debugger;
-  // if (response.length === 0) {
-  //   alert('it didn\'t work!');
-  // }
-  // else {
-  //   alert( 'it worked!' );
-  // }
-// })
-
-
 function formSubmission(){
-  console.log('submitting!')
-  debugger;
   event.preventDefault();
-  $.ajax({
-    type:'POST',
-    url:'/formSend',
-    data: { name: 'bobby joe', email: 'boby@email.com', message: 'hi Im bobby jo'}
-  })
+  if ($('#untouched').val() === 'untouched_123' && $('#blankField').val() === '')
+  {
+    console.log('our form is valid!');
+    $.ajax({
+      type:'POST',
+      url:'/formSend',
+      data:
+      {
+        name: $('input[name="name"]').val(),
+        email: $('input[name="email"]').val(),
+        message: $('textarea[name="message"]').val()
+      }
+    })
+  }
 };

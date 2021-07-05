@@ -206,19 +206,6 @@ input, textarea:focus {
   margin-top: 8px;
 }
 
-.g-recaptcha {
-  /* display:none; */
-}
-
-#google_recaptcha {
-  display:none;
-}
-
-.grecaptcha-badge{
-  display:none;
-}
-
-#captchaLegalMumboJumbo{
-  font-size: 10px;
-  color: gray;
+.blankField {
+  display: none;
 }
