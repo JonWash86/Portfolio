@@ -26,15 +26,13 @@ projectView.initPage = function(){
   });
 };
 
-function successfulForm(){
-  $("#successMessage").text('Thanks for getting in touch!')
-}
-
 function formSubmission(){
   event.preventDefault();
-  if ($('#untouched').val() === 'untouched_123' && $('#blankField').val() === '')
+  if (!formIsValid()){
+    $("#formResponse").text('Please fill out all fields');
+  }
+  else if ($('#untouched').val() === 'untouched_123' && $('#blankField').val() === '')
   {
-    console.log('our form is valid!');
     $.ajax({
       type:'POST',
       url:'/formSend',
@@ -45,5 +43,17 @@ function formSubmission(){
         message: $('textarea[name="message"]').val()
       }
     })
+    $('input[name="name"]').val('');
+    $('input[name="email"]').val('');
+    $('textarea[name="message"]').val('');
+    $("#formResponse").text('Thanks for getting in touch!')
   }
 };
+
+function formIsValid(){
+  return(
+    $('input[name="name"]').val() !== '' &&
+    $('input[name="email"]').val() !== '' &&
+    $('input[name="message"]').val() !== ''
+  );
+}
