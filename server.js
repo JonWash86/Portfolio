@@ -36,12 +36,8 @@ app.post('/formSend', function (request, response) {
     port: 465,
     secure: true,
     auth: {
-      // TODO: replace with prcoess.env before deploying
-      // Implement an actual env file with .gitignore in the future.
-      user: 'jwashdotnet@gmail.com',
-      pass: 'czipkmtukcocehnf'
-      // user: process.env.GMAIL_ACCT,
-      // pass: process.env.GMAIL_PW
+      user: process.env.GMAIL_ACCT,
+      pass: process.env.GMAIL_PW
     }
   });
 
